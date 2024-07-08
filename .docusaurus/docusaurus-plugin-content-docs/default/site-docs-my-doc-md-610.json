@@ -1,0 +1,25 @@
+{
+  "id": "my-doc-id",
+  "title": "My document title",
+  "description": "My document description",
+  "source": "@site/docs/my-doc.md",
+  "sourceDirName": ".",
+  "slug": "/my-custom-url",
+  "permalink": "/docs/next/my-custom-url",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/my-doc.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "my-doc-id",
+    "title": "My document title",
+    "description": "My document description",
+    "slug": "/my-custom-url"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "fi'l",
+    "permalink": "/docs/next/aamil/hello"
+  }
+}

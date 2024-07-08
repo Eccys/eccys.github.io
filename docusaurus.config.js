@@ -31,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ar'],
+    locales: ['en'],
   },
 
   presets: [
@@ -61,27 +61,19 @@ const config = {
   ],
 
   themeConfig:
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Nahw School',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+		alt: 'Nahw School',
+          src: 'img/logo-favicon.png',
         },
         items: [
           {
-            type: 'localeDropdown',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            type: 'docsVersionDropdown',
           },
           {
             type: 'docSidebar',
@@ -91,7 +83,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/eccys/nahw-docs',
             label: 'GitHub',
             position: 'right',
           },
