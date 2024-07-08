@@ -20,10 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Eccys', // Usually your GitHub org/user name.
-  projectName: 'nahw-docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages', // Development branch
-  trailingSlash: false,
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,7 +31,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ar'],
   },
 
   presets: [
@@ -63,6 +61,11 @@ const config = {
   ],
 
   themeConfig:
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
@@ -74,6 +77,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'localeDropdown',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
