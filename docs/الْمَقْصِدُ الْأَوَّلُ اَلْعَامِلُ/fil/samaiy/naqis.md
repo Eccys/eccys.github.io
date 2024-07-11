@@ -176,7 +176,7 @@ We are in باب الأول of مقصد الأول, which is فعل عامل. We
 
 ### الضَّرْبُ الْأَوَّلُ كَانَ وَأَخَوَاتُهَا، وَهِيَ ثَلَاثَةَ عَشَرَ
 
-The first type of أفعال السماعي are أفعال الناقصة, and the first type of أفعال الناقصة are كان وأخواتها. And there are 13 of them.
+The first type of أفعال السماعي are أفعال الناقصة, and the first type of أفعال الناقصة are كان وأخواتها. And there are thirteen of them. Many of the أفعال الناقصة show some form of tense or give a timeframe to the اسم and خبر.
 
 #### الْأَوَّلُ كَانَ، نَحْوُ كَانَ الرَّجُلُ مَرِيْضًا
 
@@ -300,163 +300,9 @@ The last فعل of كان وأخواتها is ليس. And it is a نفي (negati
 
 For example, لَيْسَ رَبُّنَا ظَالِمًا means our lord is not an oppressor.
 
-## Recap of 
+We have now completed كان وأخواتها.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-
-> It makes the فاعل and نائب الفاعل [object of a  فعل مجهول (passive verb)] مرفوع.
-
-ينصب means "to make منصوب". 
-
-> And it makes not only the مافعول به, but all the مفاعيل (objects) and the حال (state) منصوب.
-
-Any فعل قياسي will cause the فاعل and نائب الفاعل to be مرفوع, and it will cause the مفاعيل  and حال to be منصوب.
-
-## وَهُوَ قِسْمَانِ
-
-And the فعل قياسي are of two types.
-
-### الْقِسْمُ الْأَوَّلُ الْفِعْلُ اللَّازِمُ
-
-The first type of فعل قياسي is الفعل لازم (the intransitive verb).
-
-The word لازم translates to intransitive in english. Intransitive means that the فعل does not have a مفعول به. Therefore, a فعل لازم is a فعل which cannot take a مفعول به. 
-
-####  نَحْوُ: جَلَسَ الطَّالِبُ أَمَامَ الْمُعَلِّمِ مُتَأَدِّبًا.
-
-For example, the word جلس (to sit). You cannot sit something. You can sit on something, but you cannot directly sit on something. Therefore, جلس is a فعل لازم and does not take any مفعول به.
-
-:::note
-
-Although is not permissible for a فعل لازم to have a مفعول به, it is permissible for it to have other مفاعيل, such as مفعول فيه (time/place adverb), مفعول مطلق (emphasis), حال, etc...
-
-:::
-
-### الْقِسْمُ الثَّانِيْ الْفِعْلُ الْمُتَعَدِّيْ
-
-The second type of فعل قياسي is الفعل متعدي (the transitive verb).
-
-The word متعدي translates to transitive in english, meaning that a فعل متعدي is a verb which can take a مفعول به.
-
-####  نَحْوُ: يَعْبُدُ الْمُسْلِمُ اللَّهَ.
-
-The muslim worships Allah (SWT). This example has a مفعول به, and it is a فعل متعدي.
-
-:::tip
-
-It is permissible to have other مفاعيل such as مفعول له (reason/indirect object) or مفعول معه (something which the فاعل did the فعل with) with a فعل متعدي. It is not limited to just a مفعول به.
-
-:::
-
-## Recap
-
-All أفعال عاملة are of two types, and they are قيياسي and سماعي. 
-
-Currently, we are in the قياسيي section of the أفعال عاملة. The  فعل قياسي is of two types: the فعل لازم which does not take a مفعول به, and فعل متعدي which does take a مفعول به.
-
-
-Diagram of where you currently are:
 <table>
   <tr>
     <th colspan="5">الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ</th>
@@ -496,22 +342,65 @@ Diagram of where you currently are:
           <th colspan="2">الْبَابُ الْأَوَّلُ اَلْفِعْلُ</th>
         </tr>
         <tr>
-          <td>النَّوْعُ الثَّانِيْ السَّمَاعِيُّ</td>
           <td>
-            <table class="highlight">
+            <table>
               <tr>
-                <th colspan="2" class="highlight">النَّوْعُ الْأَوَّلُ الْقِيَاسِيْ</th>
+                <th colspan="3">النَّوْعُ الثَّانِيْ السَّمَاعِيُّ</th>
               </tr>
               <tr>
                 <td>
-                  <table class="highlight">
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الثَّالِثُ صِيْغَتَا التَّعَجُّبِ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الثَّانِيْ فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td colspan="2">الْقِسْمُ الْأَوَّلُ الْفِعْلُ النَّاقِصُ</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td>أَفْعَالُ الشُّرُوْعِ</td>
+                            <td>أَفْعَالُ الْمُقَارَبَةِ</td>
+                            <td>أَفْعَالُ الرَّجَاءِ</td>
+                        <table class="highlight" border="2">
+                            <td border="2" class="highlight">كَانَ وَأَخَوَاتُهَا</td>
+                        </table>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th colspan="3">النَّوْعُ الْأَوَّلُ الْقِيَاسِيْ</th>
+              </tr>
+              <tr>
+                <td>
+                  <table>
                     <tr>
                       <td>الْقِسْمُ الثَّانِيْ الْفِعْلُ الْمُتَعَدِّيْ</td>
                     </tr>
                   </table>
                 </td>
                 <td>
-                  <table class="highlight">
+                  <table>
                     <tr>
                       <td>الْقِسْمُ الْأَوَّلُ الْفِعْلُ اللَّازِمُ</td>
                     </tr>
@@ -526,10 +415,180 @@ Diagram of where you currently are:
   </tr>
 </table>
 
+---
+Now, we shall move on to the أَفْعَالُ الرَّجَاءِ.
+
+### الضَّرْبُ الثَّانِيْ أَفْعَالُ الرَّجَاءِ
+
+The second type of فعل ناقص are the أفعال مقاربة, and they are أفعال which show hope.
+
+:::info
+
+In arabic, رجى/يرجو means to hope. Meaning, the أفعال رجاء show that the متكلم wants the اسم and خبر to link together.
+
+:::
+
+#### نَحْوُ عَسَى اللَّهُ أَن يَقْبَلَ صَوْمَ الْمُسْلِمِيْنَ 
+
+For example, لفظ الجلالة (the word الله) becomes the اسم عسى, and أن وما بعدها is the خبر.. And يقبل سوم المسلمين means that الله accepts the fast of the believer. This connotes that the speaker hopes that الله accepts the fast of the believer.
+
+عسى means hopefully.
+
 :::tip
 
-We are in chapter one of the documentation, and there are four headings and one epilogue/supplement in this chapter. The first heading is regarding verbs which govern, the second is regarding the particles which govern, the third is regarding nouns which govern, and the fourth is about the invisible which govern.
+Usually when using عسى, you have أن on the خبر.
+
+:::
+
+### اَلضَّرْبُ الثَّالِثُ أَفْعَالُ الْمُقَارَبَةِ
+
+The third type of أفعال الناقصة are the  أفعال المقاربة, which show proximity of the اسم to the خبر.
+
+#### نَحْوُ كَادَ الْمُؤَذِّنُ يُؤَذِّنُ
+
+For example, we have a مبتدأ (المؤذن) which is named خبر كاد, and the خبر (يُؤَذِّنُ)is a جملة. This by itself means the مؤذن is giving أذان. However, the preceeding فعل المقاربة gives the meaning that the مؤذن is about to give أذان (i.e., he is not giving it right now, but he will give it very soon). It means that the link between the مبتدأ and خبر is close to taking place.
+
+
+
+:::info
+
+In arabic, قريب means "close" (i.e., not far away). These أفعال show مقاربة (closeness). It means that the فعل is close to occurring.
 
 :::
 
 
+
+### الضَّرْبُ الرَّابِعُ أَفْعَالُ الشُّرُوْعِ
+
+The fourth type of فعل ناقص are the أفعال الشروع, and these أفعال show that the اسم and خبر have started being linked (i.e., verbs of commencement).
+
+#### نَحْوُ طَفِقَ الصّاَئِمُوْنَ يُفْطِرُوْنَ
+
+For example, صائمون يأكلون means the fasting people are eating. And طفق الصائمون يأكلون means that the fasting people have started to eat.
+
+:::note
+
+Some other أفعل which can be a فعل الشروع are أخذ and جعل. These are regularly used in classic arabic texts. However, طفق comes in the قرآن.
+
+:::
+
+## Recap
+
+Now, we have completed part one of the أفعال السماعي, which were the أفعال الناقصة.
+
+The كان وأخواتها usually give a tense or timeframe to the اسم and خبر,
+The أفعال المقاربة show that the action is about to take place,
+The أفعال الرجاء are verbs which show the speaker's hope,
+And أَفْعَالُ الشُّرُوْعِ show that the اسم and خبر's link has commenced.  
+
+<table>
+  <tr>
+    <th colspan="5">الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ</th>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <th colspan="1">اَلْخَاتِمَةُ</th>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <th colspan="1">الْبَابُ الرَّابِعُ اَلْمَعْنَى</th>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <th colspan="1">الْبَابُ الثَّالَثُ اَلِاسْمُ</th>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <th colspan="1">الْبَابُ الثَّانِيْ اَلْحَرْفُ</th>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <th colspan="2">الْبَابُ الْأَوَّلُ اَلْفِعْلُ</th>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <th colspan="3">النَّوْعُ الثَّانِيْ السَّمَاعِيُّ</th>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الثَّالِثُ صِيْغَتَا التَّعَجُّبِ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الثَّانِيْ فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table class="highlight">
+                    <tr>
+                      <td colspan="2">الْقِسْمُ الْأَوَّلُ الْفِعْلُ النَّاقِصُ</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                        <table class="highlight" border="2">
+                            <td class="highlight">أَفْعَالُ الشُّرُوْعِ</td>
+                            <td class="highlight">أَفْعَالُ الْمُقَارَبَةِ</td>
+                            <td class="highlight">أَفْعَالُ الرَّجَاءِ</td>
+                            <td border="2" class="highlight">كَانَ وَأَخَوَاتُهَا</td>
+                        </table>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th colspan="3">النَّوْعُ الْأَوَّلُ الْقِيَاسِيْ</th>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الثَّانِيْ الْفِعْلُ الْمُتَعَدِّيْ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>الْقِسْمُ الْأَوَّلُ الْفِعْلُ اللَّازِمُ</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
