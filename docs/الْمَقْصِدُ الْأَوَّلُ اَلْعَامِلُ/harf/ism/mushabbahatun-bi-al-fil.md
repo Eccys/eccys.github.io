@@ -36,7 +36,7 @@ For example, indeed Allah is merciful.
 
 The second is أن. It is similar to إن, but إن has صدر الكلام (comes at the beginning of a speech), whereas أن comes in the middle, and it means an emphatic "that".
 
-For example, I know that ALlah is forgiving.
+For example, I know that Allah is forgiving.
 
 :::tip[HINT]
 
