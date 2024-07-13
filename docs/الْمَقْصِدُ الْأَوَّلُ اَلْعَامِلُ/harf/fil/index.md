@@ -1,6 +1,6 @@
 ---
-label: "النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ"
-sidebar_label: "النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ"
+label: "اَلنَّوْعُ الثَّانِيْ حُرُوْفٌ تَعْمَلُ فِي الْفِعْلِ"
+sidebar_label: "اَلنَّوْعُ الثَّانِيْ حُرُوْفٌ تَعْمَلُ فِي الْفِعْلِ"
 sidebar_position: 2
 ---
 
@@ -8,11 +8,13 @@ import React from 'react';
 
 # النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ
 
-The first type of حرف عامل which we will be covering are the حروف تعمل في الاسم (particles which govern nouns).
+The second type of حرف عامل which we will be covered in this documentation  are the حروف تعمل في الفعل (particles which govern verbs).
 
-## وَهِيَ أَرْبَعَةُ أَقْسَامٍ
+## وَهُوَ قِسْمَانِ
 
-And there are four types of حروف which do عمل on an اسم.
+And there are two types of حروف which do عمل on a فعل.
+
+---
 
 ### تَجُرُّ اسْمًا وَاحِدًا
 
