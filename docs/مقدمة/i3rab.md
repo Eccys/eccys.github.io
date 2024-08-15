@@ -6,32 +6,15 @@ sidebar_position: 3
 
 import React from 'react';
 
-# الْبَابُ الثَّانِيْ اَلْجُمْلَةُ
+# اَلْبَابُ الثَّالِثُ فِي الْعَامِلِ والْمَعْمُوْلِ والْإِعْرَابِ
 
-The third chapter is regarding الْعَامِلِ والْمَعْمُوْلِ والْإِعْرَابِ. There are no english equivalents for these three terms. 
+اَلْعَامِلُ مَا يُوْجِبُ حَالَةً
 
+وَالْمَعْمُوْلُ مَا يَقْبَلُهَ
 
-## اَلْعَامِلُ مَا يُوْجِبُ حَالَةً
+وَالْإِعْرَابُ أَثَرٌ يَجْلِبُهُ الْعَامِلُ فِيْ آخِرِ الْكَلِمَةِ
 
-An عامل is any governing particle, which causes or necessitates a grammatical state.
-
-## وَالْمَعْمُوْلُ مَا يَقْبَلُهَ
-
-The معمول is that which accepts the state of the عامل before it. It is what becomes governed, (i.e., becomes مرفوع, مجرور, or منصوب).
-
-## وَالْإِعْرَابُ أَثَرٌ يَجْلِبُهُ الْعَامِلُ فِيْ آخِرِ الْكَلِمَةِ
-
-The إعراب is the effect or sign which the عامل brings about near the end of the كلمة.
-
-:::note
-
-The word جلب literally means "pull" in arabic. The إعراب is the sign at the end of the كلمة which is brought about by the عامل, like the كسرة, فتحة, and ضمة.
-
-:::
-
-## Recap
-
-We have completed the third and last chapter of مقدمة.
+## خلاصة
 
 <table>
     <tr>

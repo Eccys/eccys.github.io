@@ -8,12 +8,7 @@ import React from 'react';
 
 # النَّوْعُ الثَّانِيْ السَّمَاعِيُّ
 
-
-The first second category of فعل عامل is الفعل السماعي (a فعل which does not follow a fixed ruling/pattern). 
-
-## وَهُوَ ثَلَاثَةُ أَقْسَامٍ
-
-And the الفعل السماعي is divided into three types:
+وَهُوَ ثَلَاثَةُ أَقْسَامٍ
 
 <table>
   <tr>
@@ -46,27 +41,11 @@ And the الفعل السماعي is divided into three types:
 
 ### الْقِسْمُ الْأَوَّلُ الْفِعْلُ النَّاقِصُ
 
-The first type is regarding  أفعال ناقصة (irregular verbs).
-
 ### الْقِسْمُ الثَّانِيْ فِعْلُ الْمَدْحِ وَالذَّمِّ
-
-The second type is regarding  أفعال المدح والذم (praising/dispraising verbs).
 
 ### الْقِسْمُ الثَّالِثُ صِيْغَتَا التَّعَجُّبِ
 
-And the third is regarding صيغتا التعجب (exclamating verbs).
-
-This is what الْبَابُ الْأَوَّلُ اَلْفِعْلُ looks like.
-
-
-
-
-## Overview
-
-
-
-Currently, we are in the سماعي section of the أفعال عاملة, and the أفعال السماعي are of three أقسام. We will begin with أفعال الناقصة. 
-
+## خلاصة
 
 <table>
   <tr>
