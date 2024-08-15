@@ -8,25 +8,13 @@ import React from 'react';
 
 # اَلْبَابُ الْأَوَّلُ فِي الْفِعْلِ الْعَامِلِ
 
-The second chapter of الْمَقْصِدُ الْأَوَّلُ فِي اَلْعَامِلِ
- is regarding الْحَرْفِ الْعَامِل (particles that govern). 
+وَ هُوَ نَوْعَانِ
 
+## النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ، 
 
-## وَ هُوَ نَوْعَانِ
+## اَلنَّوْعُ الثَّانِيْ حُرُوْفٌ تَعْمَلُ فِي الْفِعْلِ
 
-All حروف/أحرف which do عمل belong to one of two categories:
-
-### النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ، 
-
-Some حروف govern the اسم after them (i.e., they cause change to the nouns after them).
-
-### اَلنَّوْعُ الثَّانِيْ حُرُوْفٌ تَعْمَلُ فِي الْفِعْلِ
-
-And some حروف govern the أفعال after them (i.e., other حروف cause change to verbs instead of nouns).
-
-## Overview
-
-You are currently in the حرف عامل section, and will begin with the حرف تعمل في الاسم.
+## خلاصة
 
 <table>
   <tr>

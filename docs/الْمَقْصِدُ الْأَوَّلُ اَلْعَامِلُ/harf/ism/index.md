@@ -8,28 +8,19 @@ import React from 'react';
 
 # النَّوْعُ الْأَوَّلُ حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ
 
-The first type of حرف عامل which we will be covering are the حروف تعمل في الاسم (particles which govern nouns).
+وَهِيَ أَرْبَعَةُ أَقْسَامٍ
 
-## وَهِيَ أَرْبَعَةُ أَقْسَامٍ
+1. تَجُرُّ اسْمًا وَاحِدًا
 
-And there are four types of حروف which do عمل on an اسم.
+2. تَنْصِبُ اسْمًا وَاحِدًا
 
-### تَجُرُّ اسْمًا وَاحِدًا
+3. تَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ
 
-The first type are those حروف which تجر an اسم (i.e., make one noun مجرور). They are known as the حرف جر.
+4. تَرْفَعُ الِاسْمَ وَتَنْصِبُ الْخَبَرَ
 
-### تَنْصِبُ اسْمًا وَاحِدًا
+---
 
-The second type are those which cause one noun after it to be منصوب.
-
-
-### تَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ
-
-Then we have those particles which cause its اسم to be منصوب. These حروف are called the حروف مشبهة بالفعل.
-
-### تَرْفَعُ الِاسْمَ وَتَنْصِبُ الْخَبَرَ
-
-The last type are those which cause its اسم to be مرفوع and its خبر to be منصوب, and they are the حروف مشبهة بليس. Don't get them confused with the أفعال الناقصة, those are verbs and these are particles. We will begin with the حروف تجر اسما واحدا (particles which cause a noun to be مجرور).
+# خلاصة
 
 <table>
   <tr>

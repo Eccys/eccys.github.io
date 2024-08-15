@@ -8,57 +8,17 @@ import React from 'react';
 
 # الْبَابُ الثَّانِيْ اَلْجُمْلَةُ
 
-The second chapter is regarding الجملة (the sentence). 
+وَهِيَ قِسْمَانِ
 
-## وَهِيَ قِسْمَانِ
+## اَلْقِسْمُ الْأَوَّلُ الْجُمْلَةُ الِاسْمِيَّةُ
 
-And it comes in two types:
+نَحْوُ: اَللَّهُ خَالِقُ كُلِّ شَيْءٍ
 
-### اَلْقِسْمُ الْأَوَّلُ الْجُمْلَةُ الِاسْمِيَّةُ
+## اَلْقِسْمُ الثَّانِي الْجُمْلَةُ الْفِعْلِيَّةُ
 
-The first type is الجملة اسمية (the nominal sentence).
+نَحْوُ: خَلَقَ اللَّهُ كُلَّ شَيْءٍ
 
-:::tip
-
-A nominal sentence is defined as any sentence which **starts with an اسم** (noun). Whether it carries any verbal meaning or not is not important in نحو.
-
-:::
-
-#### نَحْوُ: اَللَّهُ خَالِقُ كُلِّ شَيْءٍ
-
-In this example, لفظ الجلالة is the مبتدأ (subject), and the phrase خالق كل شيء is the خبر (predicate).
-
-In the phrase خالق كل شيء, the word  خالق is مضاف, and كل is مضاف إليه, and شيء is also مضاف إليه.
-
-Translation: "Allah is the creator of everything".
-
-The جملة اسمية always starts with an اسم, which becomes the مبتدأ.
-
-:::note
-
-The word الله is frequently referred to as "لفظ الجلالة" in نحو.
-
-:::
-
-### اَلْقِسْمُ الثَّانِي الْجُمْلَةُ الْفِعْلِيَّةُ
-
-The second type of sentence is الجملة فعلية (the verbal sentence).
-
-A الجملة فعلية will always starts with a فعل.
-
-#### نَحْوُ: خَلَقَ اللَّهُ كُلَّ شَيْءٍ
-
-In this example, خلق is the فعل, and  لفظ الجلالة is the فاعل (subject).  كل شيء is a مضاف - مضاف إليه phrase which forms the مفعول به (object).
-
-:::note
-
-In نحو, the subject of the جملة اسمية is called the مبتدأ, and the subject of the جملة فعلية is called the فاعل (person doing the action). In english, they are both referred to as the subject.
-
-:::
-
-## Recap
-
-We have completed the second chapter of the مقدمة.
+## خلاصة
 
 <table>
     <tr>

@@ -8,44 +8,13 @@ import React from 'react';
 
 # الْقِسْمُ الثَّانِيْ فِعْلُ الْمَدْحِ وَالذَّمِّ
 
+وَهِيَ تَرْفَعُ فَاعِلَهَا وَمَخْصُوْصَهَا
 
-The second قسم of أفعال السماعي are the أفعال المدخ والذم, and they are verbs which show praise or criticism. 
+نَحْوُ نِعْمَتِ الْعِبَادَةُ الصَّلَاةُ 
 
-## وَهِيَ تَرْفَعُ فَاعِلَهَا وَمَخْصُوْصَهَا
+وَنَحْوُ بِئْسَ الْخُلُقُ الْكَسَلُ
 
-These verbs give رفع to the فاعل. It does not have a مفعول به, rather two مرفوع words. It is a unique verb, because usually verbs have only one مرفوع. These أفعال have two مرفوعين and no منصوب.
-
-:::info
-
-It gives رفع to the فاعل and the مخصوص, which in literal arabic, means "special". It is coined only because another term was needed for the second مرفوع of the فعل المدح ولذم, and فاعل was taken.
-
-:::
-
-### نَحْوُ نِعْمَتِ الْعِبَادَةُ الصَّلَاةُ 
-
-For example, نعم is the فعل المدح. It establishes the meaning of goodness. What we are saying here is that صلاة is a good عبادة. 
-
-This points out the goodness of صلاة better than sayings like الصلاة حسن. It gives رفع to its فاعل and the مخصوص (the second مرفوع).
-
-:::tip
-
-The first مرفوع is called the فاعل, and the second مرفوع is called the مخصوص. Also, عبادة is not doing the "action" of نعم although it is the فاعل. It is simply named the فاعل because it is مرفوع, and from a meaning-wise perspective, is not actually *doing* anything.
-
-:::
-
----
-
-### وَنَحْوُ بِئْسَ الْخُلُقُ الْكَسَلُ
-
-The opposite of نعم is بئس, and it means bad/horrible.
-
-In the example, خلق means character and كسل means laziness. It would be translated as 'laziness is a bad character'.
-
-## Recap
-
-We have now completed the أفعال المدح ولذم, which are verbs that have two مرفوع. The first مرفوع is called the فاعل and the second is called the مخصوص. 
-
-We have learned two of them, and they are نِعْمَ (praise) and بِءْسَ (criticism).
+# خلاصة
 
 <table>
   <tr>
