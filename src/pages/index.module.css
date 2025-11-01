@@ -3,21 +3,80 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.hero {
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
+  min-height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #0a0a0f 0%, #101022 50%, #121226 100%);
+  overflow: hidden;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.heroSubtitle {
+  margin-top: 0.75rem;
+  opacity: 0.85;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+}
+
+.cta {
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(18,18,38,0.0) 0%, rgba(18,18,38,0.25) 30%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 56rem;
+  text-align: center;
+  font-size: clamp(1rem, 2.1vw, 1.25rem);
+  line-height: 1.8;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 56rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.ctaAlt {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 996px) {
+  .section {
+    padding: 3rem 0;
+  }
 }
