@@ -65,6 +65,10 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'Nahw School',
         logo: {
@@ -132,7 +136,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Allahu Akbar · With gratitude to Al-Qalam Institute and Hashim Mohamed. © ${new Date().getFullYear()} Nahw School. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
