@@ -6,9 +6,6 @@ sidebar_position: 1
 
 # اَلْمُقَدِّمَةُ
 
-## Layout of the documentation
-
-The documentation is divided into 3 parts, (مقاصد), and 1 introduction (مقدمة).
 <table>
     <tr>
         <th colspan="4">اَلصُّغْرَى فِي النَّحْوِ</th>
@@ -21,33 +18,9 @@ The documentation is divided into 3 parts, (مقاصد), and 1 introduction (م�
     </tr>
 </table>
 
-> We are currently in the مقدمة. The مُقَدِّمَةُ is divided into 3 sections again, different levels just to make things easier. In arabic, we use words such as باب, مقصد, and قسم to denote parts, and they can be translated as chapter / heading / sub-heading, etc.. 
-
 ---
 
-The first section of the مقدمة is regarding الكلمة (words),
-
-> الكلمة (the word) is of three types:  اسم، فعل، وحرف, (nouns, verbs, and particles).
-
-The second section is regarding الجملة (sentences),
-
-> الجملة (the sentence) is of two types: اسمية وفعلية (nominal and verbal)
-
-And the third is regarding عامل، معمول، إعراب.
-
-> We have already explained what the عامل، (governor) معمول، (governed) and إعراب are.
-
-
----
-
-# اَلْمُقَدِّمَةُ
-"اَلْمُقَدِّمَةُ" may be translated as "introduction", "prelude", etc.. in english.
-
-### اَلْمُقَدِّمَةُ وَفِيْهَا ثَلَاثَةُ أَبْوَابٍ  
-
-It has three chapters. The literal meaning of "باب" is "door". However, in the context of this documentation it should be translated as chapter, heading, etc...
-
-Diagram of the مُقَدِّمَةُ:
+## اَلْمُقَدِّمَةُ وَفِيْهَا ثَلَاثَةُ أَبْوَابٍ  
 
 <table>
     <tr>
@@ -91,8 +64,3 @@ Diagram of the مُقَدِّمَةُ:
         </td>
     </tr>
 </table>
-:::warning
-
-Headers/chapters/sections/sub-sections/parts may be used interchangably within the document, but مقصد/باب/نوع/قسم/ضرب will be absolute. 
-
-:::

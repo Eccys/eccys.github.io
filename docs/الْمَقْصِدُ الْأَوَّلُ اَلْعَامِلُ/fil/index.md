@@ -8,27 +8,16 @@ import React from 'react';
 
 # اَلْبَابُ الْأَوَّلُ فِي الْفِعْلِ الْعَامِلِ
 
-The first chapter is regarding الْفِعْلِ الْعَامِلِ (verbs that govern). 
+وَ هُوَ نَوْعَانِ
 
-## وَ هُوَ نَوْعَانِ
+## النَّوْعُ الْأَوَّلُ الْقِيَاسِيْ
 
-All أفعال which do عمل belong to one of two categories:
+وهو فعل عادي، ومن الممكن إنشاء أفعال جديدة مثله، وهي تتبع نمطًا ثابتًا.
 
-### النَّوْعُ الْأَوَّلُ الْقِيَاسِيْ
+## النَّوْعُ الثَّانِيْ السَّمَاعِيُّ
 
-The first category is فعل قياسي.
+وهو ما يُسمع من القول العرب. لا ممكن أن نئت بفعل آخر بمثله
 
-The word قياسي means measurable in this context. It means here that the فعل follows a rule or a particular system. Most verbs are قياسي, and new verbs which are coined as society develops will fall into this category. 
-
-### النَّوْعُ الثَّانِيْ السَّمَاعِيُّ
-
-The second category is فعل السماعي.
-
-In arabic, سمع/يسمع means to hear. These أفعال do not follow any set of rules, and are called ساماعي because they were heard from the way arabs speak. They are a particular set of verbs, and are confined to what we have heard from the arabs.
-
-Whether a فعل is سماعي or قياسي, it will do عمل regardless. There is no فعل which does not do عمل.
-
-This is what our table looks like so far:
 <table>
   <tr>
     <th colspan="5">الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ</th>

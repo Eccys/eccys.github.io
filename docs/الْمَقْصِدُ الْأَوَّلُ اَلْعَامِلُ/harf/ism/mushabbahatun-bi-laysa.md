@@ -6,34 +6,15 @@ sidebar_position: 4
 
 import React from 'react';
 
-# الْقِسْمُ الثَّانِيْ حَرْفٌ تَنْصِبُ اسْمًا وَاحِدًا
+# الْقِسْمُ الرَّابِعُ حَرُوْفٌ تَرْفَعُ الِاسْمَ وَتَنْصِبُ الْخَبَرَ
 
-The fourth type of حروف which do عمل on an اسم are those which cause the اسم to be مرفوع and خبر to be منصوب.
+وَهِيَ حُرُوْفٌ مُشَبَّهَةٌ بِلَيْسَ
 
-## وَهِيَ حُرُوْفٌ مُشَبَّهَةٌ بِلَيْسَ
+مِنْهَا مَا
 
-And these are حروف which resemble ليس.
+نَحْوُ مَا الْمَالُ مَقْصُوْدَنَا
 
-### مِنْهَا مَا
-
-From among the حروف مشبهة بليس, there is ما.
-
-#### نَحْوُ مَا الْمَالُ مَقْصُوْدَنَا
-
-In this example, مال is the اسم ما and مقصودنا is خبر ما.
-
-Meaning, wealth is not our objective.
-
-:::info
-
-There are more حروف which resemble ليس, but they will not be covered in this version of the documentation.
-
-:::
-
-## Recap
-
-This page has covered those حروف which do عمل on an اسم, namely those which cause an اسم to be مرفوع and خبر to be منصوب, and they were the حروف مشبهة بليس, and they are ما. By covering these topics, we have finished the حروف تعمل في الاسم section of the documentation.
-
+## خلاصة
 
 <table>
   <tr>
