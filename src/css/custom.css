@@ -6,35 +6,83 @@
 
 /* Import Noto Kufi Arabic font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --highlight-background-color: #d3d3d3;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Brand Colors */
+  --brand-primary-h: 155;
+  --brand-primary-s: 100%;
+  --brand-primary-l: 45%;
+  --brand-primary: hsl(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l));
+  
+  --ifm-color-primary: var(--brand-primary);
+  --ifm-color-primary-dark: hsl(var(--brand-primary-h), var(--brand-primary-s), 40%);
+  --ifm-color-primary-darker: hsl(var(--brand-primary-h), var(--brand-primary-s), 35%);
+  --ifm-color-primary-darkest: hsl(var(--brand-primary-h), var(--brand-primary-s), 30%);
+  --ifm-color-primary-light: hsl(var(--brand-primary-h), var(--brand-primary-s), 50%);
+  --ifm-color-primary-lighter: hsl(var(--brand-primary-h), var(--brand-primary-s), 55%);
+  --ifm-color-primary-lightest: hsl(var(--brand-primary-h), var(--brand-primary-s), 60%);
+
+  /* Typography */
+  --ifm-font-family-base: 'Outfit', 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Noto Kufi Arabic', 'Outfit', sans-serif;
   --ifm-code-font-size: 95%;
+  
+  /* Layout */
+  --ifm-container-width: 1200px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --highlight-background-color: #555;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --brand-primary-l: 55%;
+  --ifm-background-color: hsl(230, 20%, 5%);
+  --ifm-navbar-background-color: hsla(230, 20%, 5%, 0.8);
+  --glass-bg: hsla(0, 0%, 100%, 0.03);
+  --glass-border: hsla(0, 0%, 100%, 0.08);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.highlight {
-  background-color: var(--highlight-background-color);
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+/* Global Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.button--secondary {
+  --ifm-button-background-color: transparent;
+  --ifm-button-border-color: var(--brand-primary);
+  --ifm-button-color: var(--brand-primary);
+  border-width: 2px;
+}
+
+.button--secondary:hover {
+  --ifm-button-background-color: var(--brand-primary);
+  --ifm-button-color: #fff;
+}
+
+/* Animations */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2); }
+  50% { box-shadow: 0 0 20px hsla(var(--brand-primary-h), 100%, 50%, 0.4); }
+  100% { box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2); }
+}
+
+.glow-on-hover:hover {
+  animation: glow 2s infinite ease-in-out;
 }
