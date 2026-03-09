@@ -1,3 +1,27 @@
+# Dependencies
 node_modules/
+
+# Docusaurus
 .docusaurus/
+build/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archive
 docs_en.tar.gz

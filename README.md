@@ -1,41 +1,59 @@
-# Website
+# Nahw School — الصغرى في النحو
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A Docusaurus-powered documentation site for learning Arabic grammar (نحو), grounded in classical texts.
+
+**Live site**: [arabic.ecys.xyz](https://arabic.ecys.xyz)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
 
 ### Installation
 
-```
-$ yarn
+```bash
+npm install
 ```
 
 ### Local Development
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```bash
+npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Starts a local development server at `http://localhost:3000`. Most changes are reflected live without restarting.
 
-### Deployment
+### Production Build
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm run build
 ```
 
-Not using SSH:
+Generates static content into the `build/` directory.
+
+### Serve Production Build Locally
+
+```bash
+npm run serve
+```
+
+## Project Structure
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+docs/               → Arabic grammar content (الصغرى في النحو)
+  مقدمة/             → Introduction (الكلمة، الجملة، العامل)
+  المقصد الأول/       → العامل (Operators)
+  المقصد الثاني/      → المعمول (Operands)
+  المقصد الثالث/      → الإعراب (Declension)
+src/
+  pages/            → Custom homepage
+  css/              → Global styles
+static/img/         → Images and favicon
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Acknowledgements
+
+With gratitude to Al-Qalam Institute and Hashim Mohamed.
+
+Built with [Docusaurus](https://docusaurus.io/).

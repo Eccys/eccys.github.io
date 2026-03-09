@@ -1,10 +1,9 @@
----
+﻿---
 label: "الْخَاتِمَةُ"
 sidebar_label: "الْخَاتِمَةُ"
 sidebar_position: 5
 ---
 
-import React from 'react';
 
 # الْخَاتِمَةُ
 
