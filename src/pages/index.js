@@ -9,11 +9,14 @@ import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Section({children, className, aos = 'fade-up'}) {
+function Feature({title, description, icon, delay, badge}) {
   return (
-    <section data-aos={aos} className={clsx(styles.section, className)}>
-      <div className="container">{children}</div>
-    </section>
+    <div className={clsx(styles.card, 'glass', 'glow-on-hover')} data-aos="fade-up" data-aos-delay={delay}>
+      <div className={styles.featureIcon}>{icon}</div>
+      {badge && <span className="badge badge--primary mb-2" style={{alignSelf: 'flex-start'}}>{badge}</span>}
+      <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+      <p className={styles.featureText}>{description}</p>
+    </div>
   );
 }
 
@@ -21,26 +24,43 @@ function Hero() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.hero}>
-      <div className="container">
-        <h1 className={styles.heroTitle}>
-          <TypeAnimation
-            sequence={["السلام عليكم"]}
-            cursor={true}
-            speed={60}
-            wrapper="span"
-          />
-        </h1>
-        <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
-        <div className={styles.cta}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
-          >
-            ابدأ الآن
-          </Link>
+      <div className={styles.heroContent}>
+        <div data-aos="zoom-in">
+          <h1 className={styles.heroTitle}>
+            <TypeAnimation
+              sequence={[
+                "السلام عليكم",
+                2000,
+                "Nahw School",
+                2000,
+                "Arabic Grammar",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </h1>
+          <p className={styles.heroSubtitle}>
+            A deep, systematic approach to mastering the language of the Qur'an, 
+            grounded in classical scholarship and modern clarity.
+          </p>
+          <div className={styles.cta}>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+            >
+              Start Learning Sughra
+            </Link>
+            <Link
+              className="button button--secondary button--lg"
+              to="#curriculum"
+            >
+              View Curriculum
+            </Link>
+          </div>
         </div>
       </div>
-      <div className={styles.heroFade} />
     </header>
   );
 }
@@ -48,42 +68,54 @@ function Hero() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   useEffect(() => {
-    AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true });
+    AOS.init({ duration: 1000, easing: 'ease-out-expo', once: true });
   }, []);
 
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Deep Arabic grammar learning grounded in classical works."
+      description="Deep Arabic grammar learning grounded in classical works like Sughra and Wusta fi an Nahw."
     >
       <Hero />
-      <main>
-        <Section>
-          <Heading as="h2" className={styles.sectionTitle}>A language that carries meaning</Heading>
-          <p className={styles.lead}>
-            If Arabic feels distant, connection also feels distant. How can one listen to the words of the Creator without the language that bears them?
-            We walk the careful path of نحو—strengthening the mind with patterns until clarity becomes natural.
-          </p>
-        </Section>
-
-        <Section aos="fade-up">
-          <Heading as="h2" className={styles.sectionTitle}>Depth over brevity</Heading>
-          <p className={styles.text}>
-            We value complete understanding—even repetition—over speed. Concepts are revisited from different angles until they settle. This is not a shortcut; it is a steady path.
-          </p>
-        </Section>
-
-        <Section aos="fade-up">
-          <Heading as="h2" className={styles.sectionTitle}>A curriculum with roots</Heading>
-          <p className={styles.text}>
-            We draw upon works like قطر الندى، ألفية ابن مالك، and the guidance of scholars such as ابن حجر and the classical tradition. The aim is not to skim, but to form the habits of a true طالب علم.
-          </p>
-          <div className={styles.ctaAlt}>
-            <Link className="button button--primary button--lg" to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/">
-              Begin the journey
-            </Link>
+      <main className="container">
+        <section id="curriculum" className="py-24">
+          <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">Two Paths to Mastery</Heading>
+          <div className={styles.grid}>
+            <Feature
+              title="Sughra fi an Nahw"
+              description="The foundational journey. Master the core patterns of Arabic sentences, governing particles, and the essential logic of نحو until clarity becomes your natural state."
+              delay={100}
+              icon="🌱"
+            />
+            <Feature
+              title="Wusta fi an Nahw"
+              description="The intermediate ascent. Deepen your understanding with complex sentence parsing (Tarkib), nuanced grammatical states, and the subtle secrets of classical Arabic syntax."
+              delay={300}
+              icon="🌿"
+              badge="Coming Soon"
+            />
+            <Feature
+              title="Classical Roots"
+              description="Our curriculum draws directly from Qatr al-Nada, Alfiyyah Ibn Malik, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy."
+              delay={500}
+              icon="📜"
+            />
           </div>
-        </Section>
+        </section>
+
+        <section className="py-24 text-center glass mb-24 p-12" data-aos="fade-up">
+          <Heading as="h2">Depth Over Brevity</Heading>
+          <p className="lead text--italic mb-8" style={{maxWidth: '800px', margin: '0 auto'}}>
+            "Connection to the words of the Creator requires the language that bears them. 
+            We do not take shortcuts; we walk the steady path of complete understanding."
+          </p>
+          <Link
+            className="button button--primary button--lg mt-8"
+            to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+          >
+            Begin the Journey
+          </Link>
+        </section>
       </main>
     </Layout>
   );
