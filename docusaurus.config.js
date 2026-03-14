@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Arabic Grammar Portal',
-  tagline: 'Beginner\'s guide to solidifying the understanding of Arabic grammar concepts',
+  title: 'Nahw School',
+  tagline: 'Deep Arabic grammar learning grounded in classical scholarship',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -63,7 +63,7 @@ const config = {
       navbar: {
         title: 'Nahw School',
         logo: {
-		alt: 'Nahw School',
+          alt: 'Nahw School',
           src: 'img/logo-favicon.png',
         },
         items: [
@@ -71,7 +71,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Get Started',
+            label: 'Sughra (Foundation)',
+          },
+          {
+            to: '/docs/wusta-coming-soon', // Placeholder or real link if exists
+            position: 'left',
+            label: 'Wusta (Intermediate)',
           },
           {
             href: 'https://github.com/Eccys/eccys.github.io',
@@ -84,11 +89,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Curriculum',
             items: [
               {
-                label: 'المقدمة — Introduction',
+                label: 'Sughra fi an Nahw',
                 to: '/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/',
+              },
+              {
+                label: 'Wusta fi an Nahw (Coming Soon)',
+                to: '#',
               },
             ],
           },
