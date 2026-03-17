@@ -49,6 +49,11 @@
   justify-content: center;
 }
 
+.curriculumSection {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -76,6 +81,18 @@
   text-align: center;
 }
 
+.featureHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
 .featureTitle {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -84,6 +101,12 @@
 .featureText {
   color: hsla(0, 0%, 100%, 0.6);
   line-height: 1.7;
+}
+
+.bottomSection {
+  padding: 4rem 2rem;
+  margin-bottom: 6rem;
+  border-radius: 24px;
 }
 
 @media screen and (max-width: 996px) {

@@ -65,9 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button--secondary {
-  --ifm-button-background-color: transparent;
+  --ifm-button-background-color: hsla(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l), 0.15);
   --ifm-button-border-color: var(--brand-primary);
-  --ifm-button-color: var(--brand-primary);
+  --ifm-button-color: #fff;
   border-width: 2px;
 }
 
