@@ -12,8 +12,10 @@ import 'aos/dist/aos.css';
 function Feature({title, description, icon, delay, badge}) {
   return (
     <div className={clsx(styles.card, 'glass', 'glow-on-hover')} data-aos="fade-up" data-aos-delay={delay}>
-      <div className={styles.featureIcon}>{icon}</div>
-      {badge && <span className="badge badge--primary mb-2" style={{alignSelf: 'flex-start'}}>{badge}</span>}
+      <div className={styles.featureHeader}>
+        <div className={styles.featureIcon}>{icon}</div>
+        {badge && <span className="badge badge--primary">{badge}</span>}
+      </div>
       <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
       <p className={styles.featureText}>{description}</p>
     </div>
@@ -78,7 +80,7 @@ export default function Home() {
     >
       <Hero />
       <main className="container">
-        <section id="curriculum" className="py-24">
+        <section id="curriculum" className={styles.curriculumSection}>
           <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">Two Paths to Mastery</Heading>
           <div className={styles.grid}>
             <Feature
@@ -95,26 +97,32 @@ export default function Home() {
               badge="Coming Soon"
             />
             <Feature
-              title="Classical Roots"
-              description="Our curriculum draws directly from Qatr al-Nada, Alfiyyah Ibn Malik, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy."
+              title="Kubra fi an Nahw"
+              description="The advanced mastery. Dive into the most intricate debates of grammar, comprehensive syntax rules, and complete fluency in analyzing classical Arabic texts."
               delay={500}
-              icon="📜"
+              icon="🌳"
+              badge="Coming Soon"
             />
           </div>
         </section>
 
-        <section className="py-24 text-center glass mb-24 p-12" data-aos="fade-up">
-          <Heading as="h2">Depth Over Brevity</Heading>
-          <p className="lead text--italic mb-8" style={{maxWidth: '800px', margin: '0 auto'}}>
+        <section className={clsx(styles.bottomSection, 'glass', 'text--center')} data-aos="fade-up">
+          <Heading as="h2" style={{marginBottom: '1.5rem'}}>Classical Roots, Steady Path</Heading>
+          <p className="text--italic" style={{maxWidth: '800px', margin: '0 auto 1.5rem auto', fontSize: '1.2rem', lineHeight: '1.8'}}>
             "Connection to the words of the Creator requires the language that bears them. 
             We do not take shortcuts; we walk the steady path of complete understanding."
           </p>
-          <Link
-            className="button button--primary button--lg mt-8"
-            to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
-          >
-            Begin the Journey
-          </Link>
+          <p style={{maxWidth: '800px', margin: '0 auto 2.5rem auto', color: 'hsla(0, 0%, 100%, 0.7)', fontSize: '1.05rem', lineHeight: '1.7'}}>
+            Our curriculum draws directly from Qatr al-Nada, Alfiyyah Ibn Malik, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
+          </p>
+          <div style={{display: 'inline-block'}}>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+            >
+              Begin the Journey
+            </Link>
+          </div>
         </section>
       </main>
     </Layout>
