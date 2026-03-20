@@ -1,5 +1,5 @@
 ﻿---
-label: "الْأَفْعَالُ النَّاقِصَةُ"
+label: "اَلْقِسْمُ الْأَوَّلُ الْأَفْعَالُ النَّاقِصَةُ"
 sidebar_label: "الْأَفْعَالُ النَّاقِصَةُ"
 sidebar_position: 1
 ---
@@ -18,9 +18,116 @@ sidebar_position: 1
 وَ هِيَ أَرْبعَةُ أَضْرُبٍ 
 
 
+<table class="glass-table">
+      <tr>
+        <th colSpan="4" style={{ textAlign: 'center' }}>الْفِعْلُ النَّاقِصُ</th>
+      </tr>
+      <tr>
+        <td>أَفْعَالُ الشُّرُوْعِ</td>
+        <td>أَفْعَالُ الْمُقَارَبَةِ</td>
+        <td>أَفْعَالُ الرَّجَاءِ</td>
+        <td>كَانَ وَأَخَوَاتُهَا</td>
+      </tr>
+</table>
 
-
-
+<table class="glass-table">
+  <tr>
+    <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
+  </tr>
+  <tr>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1">اَلْخَاتِمَةُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْمَعْنَى</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلِاسْمُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْحَرْفُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="2"> اَلْفِعْلُ</th>
+        </tr>
+        <tr>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> السَّمَاعِيُّ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> صِيْغَتَا التَّعَجُّبِ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td colspan="2"> الْفِعْلُ النَّاقِصُ</td>
+                    </tr>
+                    <tr>
+                      <td><table class="glass-table">
+                          <tr>
+                            <td>أَفْعَالُ الشُّرُوْعِ</td>
+                            <td>أَفْعَالُ الْمُقَارَبَةِ</td>
+                            <td>أَفْعَالُ الرَّجَاءِ</td>
+                        <table border="2">
+                            <td border="2">كَانَ وَأَخَوَاتُهَا</td>
+                        </table>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> الْقِيَاسِيْ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ الْمُتَعَدِّيْ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ اللَّازِمُ</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 
 ### كَانَ وَأَخَوَاتُهَا،
@@ -53,7 +160,104 @@ sidebar_position: 1
 
 #### الثَّالِثُ عَشَرَ: لَيْسَ، نَحْوُ لَيْسَ رَبُّنَا ظَالِمًا
 
-
+<table class="glass-table">
+  <tr>
+    <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
+  </tr>
+  <tr>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1">اَلْخَاتِمَةُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْمَعْنَى</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلِاسْمُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْحَرْفُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="2"> اَلْفِعْلُ</th>
+        </tr>
+        <tr>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> السَّمَاعِيُّ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> صِيْغَتَا التَّعَجُّبِ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td colspan="2"> الْفِعْلُ النَّاقِصُ</td>
+                    </tr>
+                    <tr>
+                      <td><table class="glass-table">
+                          <tr>
+                            <td>أَفْعَالُ الشُّرُوْعِ</td>
+                            <td>أَفْعَالُ الْمُقَارَبَةِ</td>
+                            <td>أَفْعَالُ الرَّجَاءِ</td>
+                        <table class="highlight" border="2">
+                            <td border="2" class="highlight">كَانَ وَأَخَوَاتُهَا</td>
+                        </table>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> الْقِيَاسِيْ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ الْمُتَعَدِّيْ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ اللَّازِمُ</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -68,3 +272,104 @@ sidebar_position: 1
 ### أَفْعَالُ الشُّرُوْعِ
 
 #### نَحْوُ طَفِقَ الصّاَئِمُوْنَ يُفْطِرُوْنَ
+
+# خلاصة
+
+<table class="glass-table">
+  <tr>
+    <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
+  </tr>
+  <tr>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1">اَلْخَاتِمَةُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْمَعْنَى</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلِاسْمُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْحَرْفُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="2"> اَلْفِعْلُ</th>
+        </tr>
+        <tr>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> السَّمَاعِيُّ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> صِيْغَتَا التَّعَجُّبِ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="highlight">
+                    <tr>
+                      <td colspan="2"> الْفِعْلُ النَّاقِصُ</td>
+                    </tr>
+                    <tr>
+                      <td><table class="glass-table">
+                          <tr>
+                        <table class="highlight" border="2">
+                            <td class="highlight">أَفْعَالُ الشُّرُوْعِ</td>
+                            <td class="highlight">أَفْعَالُ الْمُقَارَبَةِ</td>
+                            <td class="highlight">أَفْعَالُ الرَّجَاءِ</td>
+                            <td border="2" class="highlight">كَانَ وَأَخَوَاتُهَا</td>
+                        </table>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="3"> الْقِيَاسِيْ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ الْمُتَعَدِّيْ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td> الْفِعْلُ اللَّازِمُ</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

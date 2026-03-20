@@ -6,16 +6,76 @@ sidebar_position: 1
 
 # اَلْمُقَدِّمَةُ
 
-
+<table class="glass-table">
+    <thead><tr>
+            <th colSpan="4">اَلصُّغْرَى فِي النَّحْوِ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/docs/مقصد الثالث الإعراب/">اَلْإِعْرَابُ</a></td>
+            <td>اَلْمَعْمُوْلُ</td>
+            <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></td>
+            <td><a href="/docs/مقدمة/">الْمُقَدِّمَةُ</a></td>
+        </tr>
+    </tbody>
+</table>
 
 ---
 
-## اَلْمُقَدِّمَةُ وَفِيْهَا ثَلَاثَةُ أَبْوَابٍ
+## اَلْمُقَدِّمَةُ
 
-```mermaid
-mindmap
-  root((اَلْمُقَدِّمَةُ))
-    id1(الْعَامِلِ والْمَعْمُوْلِ والْإِعْرَابِ)
-    id2(اَلْجُمْلَةُ)
-    id3(الْكَلِمَةِ)
-```
+<table class="glass-table">
+    <thead><tr>
+            <th colSpan="3">اَلْمُقَدِّمَةُ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><table class="glass-table">
+                    <thead>
+                        <tr>
+                            <th colSpan="3">  اَلْعَامِلُ وَالْمَعْمُوْلُ وَالْإِعْرَابُ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="/docs/مقصد الثالث الإعراب/">الْإِعْرَابُ</a></td>
+                            <td>الْمَعْمُوْلُ</td>
+                            <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">الْعَامِلُ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td><table class="glass-table">
+                    <thead>
+                        <tr>
+                            <th colSpan="2"> اَلْجُمْلَةُ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>اَلْفِعْلِيَّةُ</td>
+                            <td>اَلِاسْمِيَّةُ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td><table class="glass-table">
+                    <thead>
+                        <tr>
+                            <th colSpan="3"> اَلْكَلِمَةُ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>اَلْحَرْفُ</td>
+                            <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></td>
+                            <td><a href="/docs/مقصد الثالث الإعراب/ism/">اَلِاسْمُ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
