@@ -4,6 +4,7 @@ sidebar_label: "حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ"
 sidebar_position: 1
 ---
 
+
 # حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ
 
 وَهِيَ أَرْبَعَةُ أَقْسَامٍ
@@ -18,11 +19,85 @@ sidebar_position: 1
 
 ---
 
-```mermaid
-mindmap
-  root((حُرُوْفٌ تَعْمَلُ فِي الِاسْمِ))
-    id1(حَرْفٌ تَنْصِبُ اسْمًا وَاحِدًا)
-    id2(حُرُوْفٌ تَجُرُّ اسْمًا وَاحِدًا)
-    id3(حُرُوْفٌ تَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ)
-    id4(حَرُوْفٌ تَرْفَعُ الِاسْمَ وَتَنْصِبُ الْخَبَرَ)
-```
+# خلاصة
+
+<table class="glass-table">
+  <tr>
+    <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
+  </tr>
+  <tr>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1">اَلْخَاتِمَةُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْمَعْنَى</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلِاسْمُ</th>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="5"> اَلْحَرْفُ</th>
+        </tr>
+        <tr>
+          <td><table class="glass-table">
+              <tr>
+                <th>تَعْمَلُ فِي الْفِعْلِ</th>
+              </tr>
+            </table>
+          </td>
+          <td><table class="glass-table">
+              <tr>
+                <th colspan="4">تَعْمَلُ فِي الِاسْمِ</th>
+              </tr>
+              <tr>
+                <td><table class="glass-table">
+                    <tr>
+                      <td>تَرْفَعُ الِاسْمَ وَتَنْصِبُ الْخَبَرَ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td>تَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table class="glass-table">
+                    <tr>
+                      <td>تَنْصِبُ اسْمًا وَاحِدًا</td>
+                    </tr>
+                  </table>
+                </td>
+                <td><table border="2">
+                    <tr>
+                      <td class="highlight">تَجُرُّ اسْمًا وَاحِدًا</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td><table class="glass-table">
+        <tr>
+          <th colspan="1"> اَلْفِعْلُ</th>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+
