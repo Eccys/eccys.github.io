@@ -111,7 +111,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Allahu Akbar · With gratitude to Al-Qalam Institute and Hashim Mohamed. © ${new Date().getFullYear()} Nahw School. Built with Docusaurus.`,
+        copyright: `With gratitude to Abdullah Azmi, Al-Qalam Institute, and Ustadh Hashim Mohamed. © ${new Date().getFullYear()} Nahw School.`,
       },
       prism: {
         theme: prismThemes.github,
