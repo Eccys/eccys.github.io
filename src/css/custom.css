@@ -4,9 +4,8 @@
  * work well for content-centric websites.
  */
 
-/* Import Noto Kufi Arabic font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
   /* Brand Colors */
@@ -14,7 +13,7 @@
   --brand-primary-s: 100%;
   --brand-primary-l: 45%;
   --brand-primary: hsl(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l));
-  
+
   --ifm-color-primary: var(--brand-primary);
   --ifm-color-primary-dark: hsl(var(--brand-primary-h), var(--brand-primary-s), 40%);
   --ifm-color-primary-darker: hsl(var(--brand-primary-h), var(--brand-primary-s), 35%);
@@ -27,7 +26,7 @@
   --ifm-font-family-base: 'Outfit', 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-family: 'Noto Kufi Arabic', 'Outfit', sans-serif;
   --ifm-code-font-size: 95%;
-  
+
   /* Layout */
   --ifm-container-width: 1200px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -52,7 +51,12 @@
 }
 
 /* Global Styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -65,9 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button--secondary {
-  --ifm-button-background-color: hsla(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l), 0.15);
+  --ifm-button-background-color: transparent;
   --ifm-button-border-color: var(--brand-primary);
-  --ifm-button-color: #fff;
+  --ifm-button-color: var(--brand-primary);
   border-width: 2px;
 }
 
@@ -76,11 +80,29 @@ h1, h2, h3, h4, h5, h6 {
   --ifm-button-color: #fff;
 }
 
+.footer {
+  background: var(--bg-surface) !important;
+  border-top: 1px solid var(--glass-border);
+  padding: 3rem 0 !important;
+}
+
+.footer__link-item, .footer__title, .footer__copyright {
+  color: hsla(0,0%,100%,0.8) !important;
+}
+
 /* Animations */
 @keyframes glow {
-  0% { box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2); }
-  50% { box-shadow: 0 0 20px hsla(var(--brand-primary-h), 100%, 50%, 0.4); }
-  100% { box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2); }
+  0% {
+    box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 20px hsla(var(--brand-primary-h), 100%, 50%, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2);
+  }
 }
 
 .glow-on-hover:hover {
