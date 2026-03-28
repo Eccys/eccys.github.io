@@ -103,6 +103,53 @@
   line-height: 1.7;
 }
 
+.learnMore {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.learnMore summary {
+  cursor: pointer;
+  color: var(--brand-primary);
+  font-weight: 600;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.learnMore summary::-webkit-details-marker {
+  display: none;
+}
+
+.learnMore summary::before {
+  content: "▸";
+  transition: transform 0.2s;
+  font-size: 1.2rem;
+}
+
+.learnMore[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.learnMoreContent {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: 1.6;
+}
+
+.learnMoreContent ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.learnMoreContent li {
+  margin-bottom: 0.5rem;
+}
+
 .bottomSection {
   padding: 4rem 2rem;
   margin-bottom: 6rem;
