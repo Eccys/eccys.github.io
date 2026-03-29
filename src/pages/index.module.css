@@ -71,7 +71,6 @@
 }
 
 .card:hover {
-  transform: translateY(-8px);
   border-color: var(--brand-primary);
   background: hsla(0, 0%, 100%, 0.05);
 }

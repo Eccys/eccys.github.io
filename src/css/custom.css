@@ -96,21 +96,11 @@ h6 {
   color: hsla(0,0%,100%,0.8) !important;
 }
 
-/* Animations */
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2);
-  }
-
-  50% {
-    box-shadow: 0 0 20px hsla(var(--brand-primary-h), 100%, 50%, 0.4);
-  }
-
-  100% {
-    box-shadow: 0 0 5px hsla(var(--brand-primary-h), 100%, 50%, 0.2);
-  }
+.glow-on-hover {
+  transition: box-shadow 0.4s ease-in, border-color 0.4s ease-in;
 }
 
 .glow-on-hover:hover {
-  animation: glow 2s infinite ease-in-out;
+  box-shadow: 0 0 18px hsla(142, 72%, 50%, 0.25);
+  border-color: var(--brand-primary) !important;
 }
