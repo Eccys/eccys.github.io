@@ -9,7 +9,7 @@ import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Feature({title, description, icon, delay, badge}) {
+function Feature({title, description, icon, delay, badge, children}) {
   return (
     <div className={clsx(styles.card, 'glass', 'glow-on-hover')} data-aos="fade-up" data-aos-delay={delay}>
       <div className={styles.featureHeader}>
@@ -18,6 +18,7 @@ function Feature({title, description, icon, delay, badge}) {
       </div>
       <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
       <p className={styles.featureText}>{description}</p>
+      {children}
     </div>
   );
 }
@@ -81,24 +82,42 @@ export default function Home() {
       <Hero />
       <main className="container">
         <section id="curriculum" className={styles.curriculumSection}>
-          <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">Two Paths to Mastery</Heading>
+          <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">
+            <span style={{fontFamily: 'Outfit'}}>Sughra</span>
+            <span style={{fontFamily: 'Space Grotesk', color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
+            <span style={{fontFamily: 'Outfit'}}>Wusta</span>
+            <span style={{fontFamily: 'Space Grotesk', color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
+            <span style={{fontFamily: 'Outfit'}}>Kubra</span>
+          </Heading>
           <div className={styles.grid}>
             <Feature
               title="Sughra fi an Nahw"
-              description="The foundational journey. Master the core patterns of Arabic sentences, governing particles, and the essential logic of نحو until clarity becomes your natural state."
+              description="The core patterns of Arabic sentences, governing particles, and the essential logic of نحو. Everything is in Arabic; basic vocabulary is highly recommended."
               delay={100}
               icon="🌱"
             />
             <Feature
               title="Wusta fi an Nahw"
-              description="The intermediate ascent. Deepen your understanding with complex sentence parsing (Tarkib), nuanced grammatical states, and the subtle secrets of classical Arabic syntax."
+              description="Complex sentence structures, advanced governing particles, and introduction of إعراب. Heavily references the qur'an. Equivalent to studying Hidayatun-Nahw and suffices for 95% of Nahw knowledge."
               delay={300}
               icon="🌿"
               badge="Coming Soon"
-            />
+            >
+              <details className={styles.learnMore}>
+                <summary>Learn More</summary>
+                <div className={styles.learnMoreContent}>
+                  <p>This course serves as a direct replacement for traditional intermediate texts like Hidayatun Nahw or Qatr an-Nada.</p>
+                  <ul>
+                    <li>We found classical second-level books cumbersome to teach; students struggled to understand the dense text without relying heavily on extensive commentaries.</li>
+                    <li>Instead of teaching directly from those older texts, we extracted the most important rules from major classical grammar books and compiled them into this custom "middle-level" (mutawassit) syllabus.</li>
+                    <li>The course is specifically designed to make the rulings as easy to understand as possible, intentionally leaving out overly long or unnecessary grammatical debates that are common in older books.</li>
+                  </ul>
+                </div>
+              </details>
+            </Feature>
             <Feature
               title="Kubra fi an Nahw"
-              description="The advanced mastery. Dive into the most intricate debates of grammar, comprehensive syntax rules, and complete fluency in analyzing classical Arabic texts."
+              description="Advanced Arabic syntax, complex grammatical governance, and semantic nuances for deep Quranic analysis. Designed for experts; prior completion of intermediate grammar is strictly required."
               delay={500}
               icon="🌳"
               badge="Coming Soon"
@@ -107,13 +126,9 @@ export default function Home() {
         </section>
 
         <section className={clsx(styles.bottomSection, 'glass', 'text--center')} data-aos="fade-up">
-          <Heading as="h2" style={{marginBottom: '1.5rem'}}>Classical Roots, Steady Path</Heading>
-          <p className="text--italic" style={{maxWidth: '800px', margin: '0 auto 1.5rem auto', fontSize: '1.2rem', lineHeight: '1.8'}}>
-            "Connection to the words of the Creator requires the language that bears them. 
-            We do not take shortcuts; we walk the steady path of complete understanding."
-          </p>
+          <Heading as="h2" style={{marginBottom: '1.5rem'}}>📚 Our Sources</Heading>
           <p style={{maxWidth: '800px', margin: '0 auto 2.5rem auto', color: 'hsla(0, 0%, 100%, 0.7)', fontSize: '1.05rem', lineHeight: '1.7'}}>
-            Our curriculum draws directly from Qatr al-Nada, Alfiyyah Ibn Malik, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
+            Our curriculum draws directly from <a href="https://en.wikipedia.org/wiki/Qatr_al-Nada" target="_blank" rel="noopener noreferrer">Qatr al-Nada</a>, <a href="https://en.wikipedia.org/wiki/Alfiyya" target="_blank" rel="noopener noreferrer">Alfiyyah Ibn Malik</a>, <a href="https://en.wikipedia.org/w/index.php?search=Hidayat+al-Nahw" target="_blank" rel="noopener noreferrer">Hidayatun Nahw</a>, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
           </p>
           <div style={{display: 'inline-block'}}>
             <Link
