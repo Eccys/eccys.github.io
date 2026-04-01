@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         <section className={clsx(styles.bottomSection, 'glass', 'text--center')} data-aos="fade-up">
-          <Heading as="h2" style={{marginBottom: '1.5rem'}}>📚 Our Sources</Heading>
+          <Heading as="h3" className={styles.featureTitle} style={{marginBottom: '1.5rem'}}>📚 Our Sources</Heading>
           <p style={{maxWidth: '800px', margin: '0 auto 2.5rem auto', color: 'hsla(0, 0%, 100%, 0.7)', fontSize: '1.05rem', lineHeight: '1.7'}}>
             Our curriculum draws directly from <a href="https://en.wikipedia.org/wiki/Qatr_al-Nada" target="_blank" rel="noopener noreferrer">Qatr al-Nada</a>, <a href="https://en.wikipedia.org/wiki/Alfiyya" target="_blank" rel="noopener noreferrer">Alfiyyah Ibn Malik</a>, <a href="https://en.wikipedia.org/w/index.php?search=Hidayat+al-Nahw" target="_blank" rel="noopener noreferrer">Hidayatun Nahw</a>, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
           </p>
