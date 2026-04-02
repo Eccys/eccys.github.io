@@ -19,6 +19,7 @@ sidebar_position: 2
 
 ## خلاصة
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="3"><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">اَلْمُقَدِّمَةُ</a></th>
@@ -58,3 +59,4 @@ sidebar_position: 2
         </td>
     </tr>
 </table>
+</div>

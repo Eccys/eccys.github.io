@@ -15,6 +15,7 @@ sidebar_position: 2
 
 # خلاصة
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -100,4 +101,5 @@ sidebar_position: 2
     </td>
   </tr>
 </table>
+</div>
 

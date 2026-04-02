@@ -18,6 +18,7 @@ sidebar_position: 1
 وَ هِيَ أَرْبعَةُ أَضْرُبٍ 
 
 
+<div class="glass-wrap">
 <table class="glass-table">
       <tr>
         <th colSpan="4" style={{ textAlign: 'center' }}><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/#الفعل-الناقص">الْفِعْلُ النَّاقِصُ</a></th>
@@ -29,7 +30,9 @@ sidebar_position: 1
         <td>كَانَ وَأَخَوَاتُهَا</td>
       </tr>
 </table>
+</div>
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -128,6 +131,7 @@ sidebar_position: 1
     </td>
   </tr>
 </table>
+</div>
 
 
 ### كَانَ وَأَخَوَاتُهَا،
@@ -160,6 +164,7 @@ sidebar_position: 1
 
 #### الثَّالِثُ عَشَرَ: لَيْسَ، نَحْوُ لَيْسَ رَبُّنَا ظَالِمًا
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -258,6 +263,7 @@ sidebar_position: 1
     </td>
   </tr>
 </table>
+</div>
 
 ---
 
@@ -275,6 +281,7 @@ sidebar_position: 1
 
 # خلاصة
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -373,3 +380,4 @@ sidebar_position: 1
     </td>
   </tr>
 </table>
+</div>

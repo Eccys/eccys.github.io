@@ -6,6 +6,7 @@ sidebar_position: 1
 
 # اَلْمُقَدِّمَةُ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <thead><tr>
             <th colSpan="4">اَلصُّغْرَى فِي النَّحْوِ</th>
@@ -20,11 +21,13 @@ sidebar_position: 1
         </tr>
     </tbody>
 </table>
+</div>
 
 ---
 
 ## اَلْمُقَدِّمَةُ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <thead><tr>
             <th colSpan="3"><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">اَلْمُقَدِّمَةُ</a></th>
@@ -79,3 +82,4 @@ sidebar_position: 1
         </tr>
     </tbody>
 </table>
+</div>

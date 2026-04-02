@@ -8,6 +8,7 @@ sidebar_position: 3
 
 وَفِيْهِ مُقَدِّمَةٌ وَثَلَاثَةُ فُصُوْلٍ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="4"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">الْفِعْلُ</a></th>
@@ -19,5 +20,6 @@ sidebar_position: 3
         <td><a href="/docs/مقصد الثالث الإعراب/muqaddimah">مُقَدِّمَةٌ</a></td>
     </tr>
 </table>
+</div>
 
 

@@ -10,6 +10,7 @@ sidebar_position: 1
 وَهُوَثَلاثَةُ أَقْسَامٍ
 
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="3">بِالْأَصَالَةِ</th>
@@ -20,3 +21,4 @@ sidebar_position: 1
         <td>مَرْفُوْعٌ</td>
     </tr>
 </table>
+</div>

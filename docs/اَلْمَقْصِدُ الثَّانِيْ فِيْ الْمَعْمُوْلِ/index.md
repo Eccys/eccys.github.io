@@ -8,6 +8,7 @@ sidebar_position: 2
 
 وَ فِيْهِ بَابَانِ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="2"><a href="/docs/اَلْمَقْصِدُ الثَّانِيْ فِيْ الْمَعْمُوْلِ/">الْمَعْمُوْلُ</a></th>
@@ -17,3 +18,4 @@ sidebar_position: 2
         <td><a href="/docs/مقصد الثالث الإعراب/ism/">الِاسْمُ</a></td>
     </tr>
 </table>
+</div>
