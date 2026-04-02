@@ -15,6 +15,7 @@ sidebar_position: 3
 
 ## خلاصة
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="3"><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">اَلْمُقَدِّمَةُ</a></th>
@@ -54,9 +55,11 @@ sidebar_position: 3
         </td>
     </tr>
 </table>
+</div>
 
 The prelude of the documentation has been completed, and the documentation may now begin.
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="4">اَلصُّغْرَى فِي النَّحْوِ</th>
@@ -68,3 +71,4 @@ The prelude of the documentation has been completed, and the documentation may n
         <td class="highlight"><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">الْمُقَدِّمَةُ</a></td>
     </tr>
 </table>
+</div>

@@ -9,6 +9,7 @@ sidebar_position: 2
 
 وَهُوَ ثَلَاثَةُ أَقْسَامٍ
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="3"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/">السَّمَاعِيُّ</a></th>
@@ -34,6 +35,7 @@ sidebar_position: 2
     </td>
   </tr>
 </table>
+</div>
 
 ### الْفِعْلُ النَّاقِصُ
 
@@ -43,6 +45,7 @@ sidebar_position: 2
 
 ## خلاصة
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -128,3 +131,4 @@ sidebar_position: 2
     </td>
   </tr>
 </table>
+</div>

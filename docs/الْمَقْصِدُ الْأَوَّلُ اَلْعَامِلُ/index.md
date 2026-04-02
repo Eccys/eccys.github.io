@@ -9,6 +9,7 @@ sidebar_position: 2
 وَ فِيْهِ أَرْبَعَةُ أَبْوَابٍ وَخَاتِمَةٌ 
 
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -21,3 +22,4 @@ sidebar_position: 2
         <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></td>
     </tr>
 </table>
+</div>

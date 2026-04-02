@@ -17,6 +17,7 @@ sidebar_position: 1
 
 وهو ما يُسمع من القول العرب. لا ممكن أن نئت بفعل آخر بمثله
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -58,4 +59,5 @@ sidebar_position: 1
     </td>
   </tr>
 </table>
+</div>
 

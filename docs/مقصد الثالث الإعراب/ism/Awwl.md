@@ -8,6 +8,7 @@ sidebar_position: 2
 
  وَهُوَ نَوْعَانِ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="2">إِعْرَابٌ لَفْظِيٌّ</th>
@@ -17,6 +18,7 @@ sidebar_position: 2
         <td>حَرَكَةٌ</td>
     </tr>
 </table>
+</div>
 
 ## إِعْرَابٌ بِالْحَرَكَةِ
 

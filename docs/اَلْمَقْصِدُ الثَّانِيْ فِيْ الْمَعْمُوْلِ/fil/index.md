@@ -11,6 +11,7 @@ sidebar_position: 2
 
 وَ هُوَ ثَلَاثَةُ أَقْسَامٍ: مَرْفُوْعٌ وَ مَنْصُوْبٌ وَ مَجْزُوْمٌ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="3"><a href="/docs/اَلْمَقْصِدُ الثَّانِيْ فِيْ الْمَعْمُوْلِ/fil/">فِي الْفِعْلِ الْمَعْمُوْلِ</a></th>
@@ -21,6 +22,7 @@ sidebar_position: 2
         <td>مَرْفُوْعٌ</td>
     </tr>
 </table>
+</div>
 
 ---
 

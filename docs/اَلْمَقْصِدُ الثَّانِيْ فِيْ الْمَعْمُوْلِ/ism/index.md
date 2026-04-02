@@ -13,6 +13,7 @@ sidebar_position: 1
 
 ### الْمَعْمُوْلُ بِالْتَبَعِيّةِ
 
+<div class="glass-wrap">
 <table class="glass-table">
     <tr>
         <th colspan="2">الِاسْمُ الْمَعْمُوْلُ</th>
@@ -22,3 +23,4 @@ sidebar_position: 1
         <td>مَعْمُوْلُ بِالْأَصَالَةِ</td>
     </tr>
 </table>
+</div>

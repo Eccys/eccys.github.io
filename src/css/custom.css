@@ -150,15 +150,15 @@ h6 {
   initial-value: -45deg;
 }
 
-/* Outer table container */
-.glass-table {
-  width: max-content !important;
-  display: table;
-  /* Don't center — let it sit naturally in the document flow */
-  margin: 0 0 2rem 0 !important;
-
-  border-collapse: separate !important;
-  border-spacing: 6px;
+/* Wrapper div — handles ALL visual glass styling.
+   Firefox ignores overflow/clip-path on display:table,
+   so we use a regular block-level wrapper instead. */
+.glass-wrap {
+  display: inline-block;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
 
   /* Reflective liquid glass background */
   background: linear-gradient(
@@ -172,15 +172,24 @@ h6 {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
-  /* Corner rounding — clip-path is the SOLE source of rounding.
-     Do NOT add border-radius here; dual rounding causes sub-pixel
-     misalignment and jagged edges in Firefox. */
-  clip-path: inset(0 round 1.5rem);
-
   /* The magic complex shadows for 3D liquid look */
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
     inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+    0 10px 30px -5px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Outer table container — purely structural now */
+.glass-table {
+  width: max-content !important;
+  display: table;
+  margin: 0 !important;
+
+  border-collapse: separate !important;
+  border-spacing: 6px;
+
+  /* No visual styling here — the wrapper handles it */
+  background: transparent;
 
   font-family: 'Noto Kufi Arabic', sans-serif !important;
 }
@@ -312,9 +321,12 @@ h6 {
 
 /* Tablet breakpoint */
 @media screen and (max-width: 996px) {
+  .glass-wrap {
+    border-radius: 1rem;
+  }
+
   .glass-table {
     border-spacing: 4px;
-    border-radius: 1rem;
   }
 
   .glass-table th,
@@ -336,10 +348,13 @@ h6 {
     overflow-x: auto;
   }
 
+  .glass-wrap {
+    border-radius: 0.75rem;
+    margin: 0 0 1.5rem 0;
+  }
+
   .glass-table {
     border-spacing: 3px;
-    border-radius: 0.75rem;
-    margin: 0 0 1.5rem 0 !important;
     font-size: 0.85rem;
   }
 

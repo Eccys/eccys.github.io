@@ -23,6 +23,7 @@ sidebar_position: 3
 ### وَهِذِه السِّتَّةُ تُسَمَّی الْحُرُوْفَ الْمُشَبَّهَةَ بِالْفِعْلِ
 #### السَّابِعُ: لَا لِنَفْيِ الْجِنْسِ، نَحْوُ: لَا فَاعِلَ شَرٍّ فَائِزٌ
 # خلاصة
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="5"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></th>
@@ -100,10 +101,12 @@ sidebar_position: 3
     </td>
   </tr>
 </table>
+</div>
 
 
 Below is a diagram of the particles which govern nouns.
 
+<div class="glass-wrap">
 <table class="glass-table">
   <tr>
     <th colspan="4">تَعْمَلُ فِي الِاسْمِ</th>
@@ -144,3 +147,4 @@ Below is a diagram of the particles which govern nouns.
     </td>
   </tr>
 </table>
+</div>
