@@ -171,10 +171,11 @@ h6 {
   /* Deep blur and specular highlights */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 1.25rem;
 
-  /* Cross-browser corner clipping — Firefox ignores overflow:hidden on tables */
-  clip-path: inset(0 round 1.25rem);
+  /* Corner rounding — clip-path is the SOLE source of rounding.
+     Do NOT add border-radius here; dual rounding causes sub-pixel
+     misalignment and jagged edges in Firefox. */
+  clip-path: inset(0 round 1.5rem);
 
   /* The magic complex shadows for 3D liquid look */
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
