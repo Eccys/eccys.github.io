@@ -95,13 +95,23 @@ export default function Home() {
               description="The core patterns of Arabic sentences, governing particles, and the essential logic of نحو. Everything is in Arabic; basic vocabulary is highly recommended."
               delay={100}
               icon="🌱"
-            />
+            >
+              <div className={styles.learnMore}>
+                <Link
+                  className="button button--primary button--sm"
+                  to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+                  style={{ borderRadius: '8px', padding: '0.5rem 1.5rem' }}
+                >
+                  Start Now
+                </Link>
+              </div>
+            </Feature>
             <Feature
               title="Wusta fi an Nahw"
               description="Complex sentence structures, advanced governing particles, and introduction of إعراب. Heavily references the qur'an. Equivalent to studying Hidayatun-Nahw and suffices for 95% of Nahw knowledge."
               delay={300}
               icon="🌿"
-              badge="Coming Soon"
+              badge="In Progress"
             >
               <details className={styles.learnMore}>
                 <summary>Learn More</summary>
