@@ -164,3 +164,25 @@
     grid-template-columns: 1fr;
   }
 }
+
+.startNowLink {
+  cursor: pointer;
+  color: var(--brand-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+  text-decoration: none;
+}
+
+.startNowLink:hover {
+  color: var(--brand-primary);
+  text-decoration: underline;
+}
+
+.startNowLink::before {
+  content: "▸";
+  transition: transform 0.2s;
+  font-size: 1.2rem;
+}

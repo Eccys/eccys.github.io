@@ -78,7 +78,12 @@ h6 {
 
 .button--secondary:hover {
   --ifm-button-background-color: var(--brand-primary);
-  --ifm-button-color: #fff;
+  --ifm-button-color: #000;
+  color: #000 !important;
+}
+
+.badge--primary {
+  color: #000 !important;
 }
 
 .footer {

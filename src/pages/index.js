@@ -98,9 +98,8 @@ export default function Home() {
             >
               <div className={styles.learnMore}>
                 <Link
-                  className="button button--primary button--sm"
+                  className={styles.startNowLink}
                   to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
-                  style={{ borderRadius: '8px', padding: '0.5rem 1.5rem' }}
                 >
                   Start Now
                 </Link>
