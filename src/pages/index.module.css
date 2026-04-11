@@ -30,6 +30,7 @@
   background: linear-gradient(135deg, #fff 0%, hsla(0, 0%, 100%, 0.6) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 .heroSubtitle {
@@ -79,6 +80,7 @@
   font-size: 2.5rem;
   margin-bottom: 3rem;
   text-align: center;
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 .featureHeader {
@@ -96,11 +98,13 @@
 .featureTitle {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  font-family: 'Space Grotesk', sans-serif !important;
 }
 
 .featureText {
   color: hsla(0, 0%, 100%, 0.6);
   line-height: 1.7;
+  flex-grow: 1;
 }
 
 .learnMore {
@@ -169,9 +173,7 @@
   cursor: pointer;
   color: var(--brand-primary);
   font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: inline-block;
   user-select: none;
   text-decoration: none;
 }
@@ -179,10 +181,11 @@
 .startNowLink:hover {
   color: var(--brand-primary);
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .startNowLink::before {
-  content: "▸";
+  content: "▸\00a0\00a0";
   transition: transform 0.2s;
   font-size: 1.2rem;
 }
