@@ -133,7 +133,7 @@ function Hero() {
   return (
     <header className={styles.hero}>
       <div className={styles.heroContent}>
-        <div data-aos={shouldAnimate ? "zoom-in" : undefined}>
+        <div className={shouldAnimate ? styles.heroFirstLoad : undefined}>
           <h1 className={styles.heroTitle}>
             <TypeAnimation
               sequence={[
