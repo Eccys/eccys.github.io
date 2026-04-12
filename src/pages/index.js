@@ -5,7 +5,8 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import {TypeAnimation} from 'react-type-animation';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
+import {useHistory} from '@docusaurus/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,7 +24,7 @@ function Feature({title, description, icon, delay, badge, children}) {
   );
 }
 
-function Hero() {
+function Hero({onStart}) {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={styles.hero}>
@@ -49,12 +50,13 @@ function Hero() {
             grounded in classical scholarship and modern clarity.
           </p>
           <div className={styles.cta}>
-            <Link
+            <button
               className="button button--primary button--lg"
-              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+              onClick={() => onStart('/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/')}
+              style={{cursor: 'pointer'}}
             >
               Start Learning Sughra
-            </Link>
+            </button>
             <Link
               className="button button--secondary button--lg"
               to="#curriculum"
@@ -70,16 +72,27 @@ function Hero() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const history = useHistory();
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 1000, easing: 'ease-out-expo', once: true });
   }, []);
+
+  const handleStartTransition = (url) => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      history.push(url);
+    }, 600);
+  };
 
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
       description="Deep Arabic grammar learning grounded in classical works like Sughra and Wusta fi an Nahw."
     >
-      <Hero />
+      <div className={clsx('page-transition-overlay', isTransitioning && 'active')} />
+      <Hero onStart={handleStartTransition} />
       <main className="container">
         <section id="curriculum" className={styles.curriculumSection}>
           <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">
@@ -140,12 +153,13 @@ export default function Home() {
             Our curriculum draws directly from <a href="https://en.wikipedia.org/wiki/Qatr_al-Nada" target="_blank" rel="noopener noreferrer">Qatr al-Nada</a>, <a href="https://en.wikipedia.org/wiki/Alfiyya" target="_blank" rel="noopener noreferrer">Alfiyyah Ibn Malik</a>, <a href="https://en.wikipedia.org/w/index.php?search=Hidayat+al-Nahw" target="_blank" rel="noopener noreferrer">Hidayatun Nahw</a>, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
           </p>
           <div style={{display: 'inline-block'}}>
-            <Link
+            <button
               className="button button--primary button--lg"
-              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+              onClick={() => handleStartTransition('/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/')}
+              style={{cursor: 'pointer'}}
             >
               Begin the Journey
-            </Link>
+            </button>
           </div>
         </section>
       </main>
