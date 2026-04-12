@@ -83,11 +83,11 @@ export default function Home() {
       <main className="container">
         <section id="curriculum" className={styles.curriculumSection}>
           <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">
-            <span style={{fontFamily: 'Outfit'}}>Sughra</span>
-            <span style={{fontFamily: 'Space Grotesk', color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
-            <span style={{fontFamily: 'Outfit'}}>Wusta</span>
-            <span style={{fontFamily: 'Space Grotesk', color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
-            <span style={{fontFamily: 'Outfit'}}>Kubra</span>
+            <span>Sughra</span>
+            <span style={{color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
+            <span>Wusta</span>
+            <span style={{color: 'var(--brand-primary)', margin: '0 0.5rem'}}> ➔ </span>
+            <span>Kubra</span>
           </Heading>
           <div className={styles.grid}>
             <Feature
