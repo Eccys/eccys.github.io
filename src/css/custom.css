@@ -8,10 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
-  /* Brand Colors */
+  /* Brand Colors — dark mode only */
   --brand-primary-h: 155;
   --brand-primary-s: 100%;
-  --brand-primary-l: 45%;
+  --brand-primary-l: 55%;
   --brand-primary: hsl(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l));
 
   --ifm-color-primary: var(--brand-primary);
@@ -29,11 +29,8 @@
 
   /* Layout */
   --ifm-container-width: 1200px;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
 
-[data-theme='dark'] {
-  --brand-primary-l: 55%;
+  /* Dark mode surfaces */
   --ifm-background-color: hsl(230, 20%, 5%);
   --ifm-navbar-background-color: hsla(230, 20%, 5%, 0.8);
   --glass-bg: hsla(0, 0%, 100%, 0.03);
@@ -106,7 +103,7 @@ h6 {
 }
 
 /* =====================================================
-   Arabic Markdown Content — Amiri font for docs pages
+   Arabic Markdown Content — Noto Kufi Arabic for docs
    ===================================================== */
 
 .markdown h1,
@@ -115,13 +112,13 @@ h6 {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  font-family: 'Amiri', serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   line-height: 1.6;
 }
 
 .markdown p,
 .markdown li {
-  font-family: 'Amiri', serif;
+  font-family: 'Noto Kufi Arabic', sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
 }
@@ -170,7 +167,7 @@ h6 {
     0 10px 30px -5px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 
-  font-family: 'Amiri', serif !important;
+  font-family: 'Noto Kufi Arabic', sans-serif !important;
 }
 
 /* Reset inner/nested tables — no double glass */
@@ -192,7 +189,7 @@ h6 {
   padding: 0.6rem 0.9rem;
   text-align: center;
   border-radius: 0.75rem;
-  font-family: 'Amiri', serif !important;
+  font-family: 'Noto Kufi Arabic', sans-serif !important;
   font-size: 1.15rem;
 
   /* Inner item liquid glass */
@@ -280,4 +277,82 @@ h6 {
 .glass-table td:not(:has(> table)):hover a {
   color: var(--ifm-color-primary-lighter);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* =====================================================
+   Mobile Responsive — Glass Tables
+   ===================================================== */
+
+/* Wrapper: make tables horizontally scrollable on small screens */
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* But our glass-table should stay as a table display */
+.glass-table {
+  display: table;
+}
+
+/* Tablet breakpoint */
+@media screen and (max-width: 996px) {
+  .glass-table {
+    border-spacing: 4px;
+    border-radius: 1rem;
+  }
+
+  .glass-table th,
+  .glass-table td {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+  }
+
+  .glass-table .glass-table {
+    border-spacing: 3px;
+  }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 600px) {
+  /* Allow horizontal scroll if needed */
+  .markdown {
+    overflow-x: auto;
+  }
+
+  .glass-table {
+    border-spacing: 3px;
+    border-radius: 0.75rem;
+    margin: 0 0 1.5rem 0 !important;
+    font-size: 0.85rem;
+  }
+
+  .glass-table th,
+  .glass-table td {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+  }
+
+  .glass-table .glass-table {
+    border-spacing: 2px;
+  }
+
+  .glass-table td:has(> table),
+  .glass-table td:has(> .glass-table) {
+    padding: 0.15rem;
+  }
+
+  /* Stack nested tables vertically on very small screens */
+  .glass-table > tbody > tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .glass-table > tbody > tr > td {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
 }

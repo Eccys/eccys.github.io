@@ -63,7 +63,8 @@ const config = {
       image: 'img/logo-favicon.png',
       colorMode: {
         defaultMode: 'dark',
-        respectPrefersColorScheme: true,
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'Nahw School',
