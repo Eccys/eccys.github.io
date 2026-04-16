@@ -154,6 +154,21 @@
   margin-bottom: 0.5rem;
 }
 
+.learnMore[open] .learnMoreContent {
+  animation: sweep 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .bottomSection {
   padding: 4rem 2rem;
   margin-bottom: 6rem;
