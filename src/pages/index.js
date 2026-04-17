@@ -5,8 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import {TypeAnimation} from 'react-type-animation';
-import {useEffect, useState} from 'react';
-import {useHistory} from '@docusaurus/router';
+import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,8 +23,34 @@ function Feature({title, description, icon, delay, badge, children}) {
   );
 }
 
-function Hero({onStart}) {
+function Hero() {
   const {siteConfig} = useDocusaurusContext();
+  const scrollToCurriculum = (e) => {
+    e.preventDefault();
+    const target = document.getElementById('curriculum');
+    if (!target) return;
+    
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1200; // heavy ease
+    let start = null;
+    
+    const easeInOutQuart = time => time < 0.5 ? 8 * time * time * time * time : 1 - Math.pow(-2 * time + 2, 4) / 2;
+
+    window.requestAnimationFrame(function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percent = Math.min(progress / duration, 1);
+      
+      window.scrollTo(0, startPosition + distance * easeInOutQuart(percent));
+      
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      }
+    });
+  };
+
   return (
     <header className={styles.hero}>
       <div className={styles.heroContent}>
@@ -50,19 +75,19 @@ function Hero({onStart}) {
             grounded in classical scholarship and modern clarity.
           </p>
           <div className={styles.cta}>
-            <button
+            <Link
               className="button button--primary button--lg"
-              onClick={() => onStart('/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/')}
-              style={{cursor: 'pointer'}}
+              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
             >
               Start Learning Sughra
-            </button>
-            <Link
+            </Link>
+            <a
               className="button button--secondary button--lg"
-              to="#curriculum"
+              href="#curriculum"
+              onClick={scrollToCurriculum}
             >
               View Curriculum
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -72,27 +97,16 @@ function Hero({onStart}) {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  const history = useHistory();
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
   useEffect(() => {
     AOS.init({ duration: 1000, easing: 'ease-out-expo', once: true });
   }, []);
-
-  const handleStartTransition = (url) => {
-    setIsTransitioning(true);
-    setTimeout(() => {
-      history.push(url);
-    }, 600);
-  };
 
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
       description="Deep Arabic grammar learning grounded in classical works like Sughra and Wusta fi an Nahw."
     >
-      <div className={clsx('page-transition-overlay', isTransitioning && 'active')} />
-      <Hero onStart={handleStartTransition} />
+      <Hero />
       <main className="container">
         <section id="curriculum" className={styles.curriculumSection}>
           <Heading as="h2" className={styles.sectionTitle} data-aos="fade-up">
@@ -153,13 +167,12 @@ export default function Home() {
             Our curriculum draws directly from <a href="https://en.wikipedia.org/wiki/Qatr_al-Nada" target="_blank" rel="noopener noreferrer">Qatr al-Nada</a>, <a href="https://en.wikipedia.org/wiki/Alfiyya" target="_blank" rel="noopener noreferrer">Alfiyyah Ibn Malik</a>, <a href="https://en.wikipedia.org/w/index.php?search=Hidayat+al-Nahw" target="_blank" rel="noopener noreferrer">Hidayatun Nahw</a>, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
           </p>
           <div style={{display: 'inline-block'}}>
-            <button
+            <Link
               className="button button--primary button--lg"
-              onClick={() => handleStartTransition('/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/')}
-              style={{cursor: 'pointer'}}
+              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
             >
               Begin the Journey
-            </button>
+            </Link>
           </div>
         </section>
       </main>
