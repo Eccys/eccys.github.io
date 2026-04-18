@@ -106,7 +106,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className={clsx(styles.pageTransition, isTransitioning && styles.pageTransitionActive)} />
+      <div className={clsx(styles.pageTransition, isTransitioning && styles.pageTransitionActive)}>
+        <h2 style={{ color: 'white', fontFamily: '"Space Grotesk", sans-serif', fontSize: '3rem', margin: 0 }}>
+          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+        </h2>
+      </div>
     </header>
   );
 }
