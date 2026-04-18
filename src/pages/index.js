@@ -31,6 +31,19 @@ function Hero() {
   const isBrowser = useIsBrowser();
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
+  // DX Helper: Ctrl + Alt + R to reset animations for testing
+  useEffect(() => {
+    if (!isBrowser) return;
+    const handleReset = (e) => {
+      if (e.ctrlKey && e.altKey && e.key === 'r') {
+        sessionStorage.clear();
+        window.location.reload();
+      }
+    };
+    window.addEventListener('keydown', handleReset);
+    return () => window.removeEventListener('keydown', handleReset);
+  }, [isBrowser]);
+
   useEffect(() => {
     if (isBrowser) {
       const hasAnimated = sessionStorage.getItem('hasAnimatedHero');
