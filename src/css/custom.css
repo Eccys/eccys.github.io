@@ -4,102 +4,153 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #1e8b70; /* Base color: A deep, elegant emerald green */
-  --ifm-color-primary-dark: #1b7d65;
-  --ifm-color-primary-darker: #19765f;
-  --ifm-color-primary-darkest: #15624e;
-  --ifm-color-primary-light: #21997b;
-  --ifm-color-primary-lighter: #23a081;
-  --ifm-color-primary-lightest: #27b692;
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@500;700&display=swap');
 
+:root {
+  /* Brand Colors */
+  --brand-primary-h: 155;
+  --brand-primary-s: 100%;
+  --brand-primary-l: 45%;
+  --brand-primary: hsl(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l));
+
+  --ifm-color-primary: var(--brand-primary);
+  --ifm-color-primary-dark: hsl(var(--brand-primary-h), var(--brand-primary-s), 40%);
+  --ifm-color-primary-darker: hsl(var(--brand-primary-h), var(--brand-primary-s), 35%);
+  --ifm-color-primary-darkest: hsl(var(--brand-primary-h), var(--brand-primary-s), 30%);
+  --ifm-color-primary-light: hsl(var(--brand-primary-h), var(--brand-primary-s), 50%);
+  --ifm-color-primary-lighter: hsl(var(--brand-primary-h), var(--brand-primary-s), 55%);
+  --ifm-color-primary-lightest: hsl(var(--brand-primary-h), var(--brand-primary-s), 60%);
+
+  /* Typography */
+  --ifm-font-family-base: 'Outfit', 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Noto Kufi Arabic', 'Outfit', sans-serif;
   --ifm-code-font-size: 95%;
+
+  /* Layout */
+  --ifm-container-width: 1200px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #34d399; /* Base color: A vibrant, modern mint green */
-  --ifm-color-primary-dark: #20c98c;
-  --ifm-color-primary-darker: #1ec287;
-  --ifm-color-primary-darkest: #19a06f;
-  --ifm-color-primary-light: #48d8a6;
-  --ifm-color-primary-lighter: #52dbae;
-  --ifm-color-primary-lightest: #71e2be;
-
+  --brand-primary-l: 55%;
+  --ifm-background-color: hsl(230, 20%, 5%);
+  --ifm-navbar-background-color: hsla(230, 20%, 5%, 0.8);
+  --glass-bg: hsla(0, 0%, 100%, 0.03);
+  --glass-border: hsla(0, 0%, 100%, 0.08);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-@font-face {
-    font-family: 'Amiri';
-    src: url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Glassmorphism Utility (homepage cards + bottom section) */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
 }
 
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Global Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-body {
-    font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
 }
 
-[data-theme='dark'] body {
-    background-color: #1a1b1e;
+.button--secondary {
+  --ifm-button-background-color: transparent;
+  --ifm-button-border-color: var(--brand-primary);
+  --ifm-button-color: var(--brand-primary);
+  color: var(--brand-primary) !important;
+  border-width: 2px;
 }
 
-/* Base styles for Arabic text globally to ensure it always uses Amiri and is slightly larger */
-h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
-  /* Using a generic attribute selector or just relying on unicode ranges if possible, 
-     but setting it generally for the docs content helps. */
+.button--secondary:hover {
+  --ifm-button-background-color: var(--brand-primary);
+  --ifm-button-color: #000;
+  color: #000 !important;
 }
 
-/* Target specifically markdown content for Arabic text */
+.badge--primary {
+  color: #000 !important;
+}
+
+.footer {
+  background: var(--bg-surface) !important;
+  border-top: 1px solid var(--glass-border);
+  padding: 3rem 0 !important;
+}
+
+.footer__link-item, .footer__title, .footer__copyright {
+  color: hsla(0,0%,100%,0.8) !important;
+}
+
+.glow-on-hover {
+  transition: box-shadow 0.4s ease-in, border-color 0.4s ease-in;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 18px hsla(142, 72%, 50%, 0.25);
+  border-color: var(--brand-primary) !important;
+}
+
+/* =====================================================
+   Arabic Markdown Content — Amiri font for docs pages
+   ===================================================== */
+
 .markdown h1,
 .markdown h2,
 .markdown h3,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-    font-family: 'Amiri', serif;
-    line-height: 1.6;
+  font-family: 'Amiri', serif;
+  line-height: 1.6;
 }
 
 .markdown p,
-.markdown li,
-.markdown td,
-.markdown th,
-.markdown a {
-    font-family: 'Amiri', serif;
-    font-size: 1.2rem; /* Make it slightly larger for better readability */
-    line-height: 1.8;
+.markdown li {
+  font-family: 'Amiri', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-/* Reset font for English elements like code blocks or specific English sections if needed */
 .markdown code {
-    font-family: var(--ifm-font-family-monospace);
-    font-size: var(--ifm-code-font-size);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
 }
 
-/* Defs for reflective glass */
+/* =====================================================
+   Liquid Glass Reflective Tables — docs only
+   ===================================================== */
+
 @property --glass-angle {
   syntax: "<angle>";
   inherits: false;
   initial-value: -45deg;
 }
 
-/* Liquid Glass Reflective Tables */
-
+/* Outer table container */
 .glass-table {
-  /* Fix width: don't stretch */
   width: max-content !important;
   display: table;
-  margin: 0 auto 3rem auto !important; /* center the tables */
+  /* Don't center — let it sit naturally in the document flow */
+  margin: 0 0 2rem 0 !important;
 
   border-collapse: separate !important;
   border-spacing: 6px;
-  
+
   /* Reflective liquid glass background */
   background: linear-gradient(
     -75deg,
@@ -107,74 +158,80 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
     rgba(255, 255, 255, 0.08),
     rgba(255, 255, 255, 0.02)
   );
-  
+
   /* Deep blur and specular highlights */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 1.5rem;
-  overflow: hidden !important;
+  border-radius: 1.25rem;
 
   /* The magic complex shadows for 3D liquid look */
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
     inset 0 -2px 4px rgba(0, 0, 0, 0.2),
     0 10px 30px -5px rgba(0, 0, 0, 0.3),
-    0 0 2px 2px inset rgba(255, 255, 255, 0.05),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 
   font-family: 'Amiri', serif !important;
 }
 
-/* Reset inner tables to not double up the heavy container styling */
+/* Reset inner/nested tables — no double glass */
 .glass-table .glass-table {
-  background: transparent;
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border-radius: 0;
-  margin-bottom: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
   border-spacing: 4px;
   width: auto !important;
-  margin: 0 auto !important;
 }
 
-/* The actual cells: specular items */
+/* Table cells — specular items */
 .glass-table th,
 .glass-table td {
   position: relative;
-  padding: 0.75rem 1rem;
+  padding: 0.6rem 0.9rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   font-family: 'Amiri', serif !important;
-  font-size: 1.2rem;
-  
+  font-size: 1.15rem;
+
   /* Inner item liquid glass */
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.06),
     rgba(255, 255, 255, 0.01)
   );
-  
+
   /* Bevel effect */
-  box-shadow: 
+  box-shadow:
     inset 1px 1px 2px rgba(255, 255, 255, 0.15),
     inset -1px -1px 2px rgba(0, 0, 0, 0.3),
     0 4px 10px rgba(0, 0, 0, 0.1);
 
   transition: all 400ms cubic-bezier(0.25, 1, 0.5, 1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  overflow: hidden !important;
 }
 
-/* Subtle animated glare inside the cells */
-.glass-table td::after,
+/* Cells that CONTAIN nested tables should have NO background/bevel of their own */
+.glass-table td:has(> table),
+.glass-table td:has(> .glass-table) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0.25rem;
+}
+
+/* Subtle animated glare inside leaf cells only */
+.glass-table td:not(:has(> table))::after,
 .glass-table th::after {
   content: "";
   position: absolute;
   inset: 0;
+  border-radius: inherit;
   background: linear-gradient(
     var(--glass-angle),
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.15) 40% 50%,
+    rgba(255, 255, 255, 0.12) 40% 50%,
     rgba(255, 255, 255, 0) 55%
   );
   background-size: 200% 200%;
@@ -189,20 +246,21 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
   font-weight: bold;
 }
 
-.glass-table td:hover {
+/* Hover effect — ONLY for leaf cells (no nested tables inside) */
+.glass-table td:not(:has(> table)):hover {
   transform: scale(0.975);
-  box-shadow: 
+  box-shadow:
     inset 1px 1px 3px rgba(0, 0, 0, 0.1),
     inset -1px -1px 3px rgba(255, 255, 255, 0.1),
     0 2px 5px rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-.glass-table td:hover::after {
+.glass-table td:not(:has(> table)):hover::after {
   background-position: 25% 50%;
 }
 
-.glass-table td:active::after {
+.glass-table td:not(:has(> table)):active::after {
   background-position: 50% 15%;
   --glass-angle: -15deg;
 }
@@ -218,7 +276,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
   transition: all 400ms ease;
 }
 
-.glass-table td:hover a {
+/* Hover color change — ONLY for links inside leaf cells */
+.glass-table td:not(:has(> table)):hover a {
   color: var(--ifm-color-primary-lighter);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
