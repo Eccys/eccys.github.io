@@ -23,8 +23,22 @@ function Feature({title, description, icon, delay, badge, children}) {
   );
 }
 
+import React, { useState } from 'react';
+import { useHistory } from '@docusaurus/router';
+
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
+  const history = useHistory();
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleStartLearning = (e) => {
+    e.preventDefault();
+    setIsTransitioning(true);
+    setTimeout(() => {
+      history.push('/docs/مقدمة/');
+    }, 800);
+  };
+
   const scrollToCurriculum = (e) => {
     e.preventDefault();
     const target = document.getElementById('curriculum');
@@ -75,12 +89,13 @@ function Hero() {
             grounded in classical scholarship and modern clarity.
           </p>
           <div className={styles.cta}>
-            <Link
+            <a
               className="button button--primary button--lg"
-              to="/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/"
+              href="/docs/مقدمة/"
+              onClick={handleStartLearning}
             >
               Start Learning Sughra
-            </Link>
+            </a>
             <a
               className="button button--secondary button--lg"
               href="#curriculum"
@@ -91,6 +106,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <div className={clsx(styles.pageTransition, isTransitioning && styles.pageTransitionActive)} />
     </header>
   );
 }
