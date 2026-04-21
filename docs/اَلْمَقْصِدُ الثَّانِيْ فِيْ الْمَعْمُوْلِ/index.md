@@ -10,7 +10,7 @@ sidebar_position: 2
 
 <table class="glass-table">
     <tr>
-        <th colspan="2">الْمَعْمُوْلُ</th>
+        <th colspan="2"><a href="/docs/اَلْمَقْصِدُ الثَّانِيْ فِيْ الْمَعْمُوْلِ/">الْمَعْمُوْلُ</a></th>
     </tr>
     <tr>
         <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">الْفِعْلُ</a></td>

@@ -22,25 +22,25 @@ sidebar_position: 2
   <tr>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1">اَلْخَاتِمَةُ</th>
+          <th colspan="1"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/5tmH/">اَلْخَاتِمَةُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْمَعْنَى</th>
+          <th colspan="1">اَلْمَعْنَى</th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلِاسْمُ</th>
+          <th colspan="1"><a href="/docs/مقصد الثالث الإعراب/ism/">اَلِاسْمُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="2"> اَلْحَرْفُ</th>
+          <th colspan="2"><a href="/docs/مقدمة/kalimah#الحرف">اَلْحَرْفُ</a></th>
         </tr>
         <tr>
           <td>تَعْمَلُ فِي الِاسْمِ</td>
@@ -50,7 +50,7 @@ sidebar_position: 2
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْفِعْلُ</th>
+          <th colspan="1"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></th>
         </tr>
       </table>
     </td>

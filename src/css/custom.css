@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
   margin: 0 auto 3rem auto !important; /* center the tables */
 
   border-collapse: separate !important;
-  border-spacing: 12px;
+  border-spacing: 6px;
   
   /* Reflective liquid glass background */
   background: linear-gradient(
@@ -111,7 +111,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
   /* Deep blur and specular highlights */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden !important;
 
   /* The magic complex shadows for 3D liquid look */
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
@@ -120,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
     0 0 2px 2px inset rgba(255, 255, 255, 0.05),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 
-  /* Ensure child tables inside reset to generic */
+  font-family: 'Amiri', serif !important;
 }
 
 /* Reset inner tables to not double up the heavy container styling */
@@ -131,17 +132,20 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
   -webkit-backdrop-filter: none;
   border-radius: 0;
   margin-bottom: 0 !important;
-  border-spacing: 6px;
-  width: 100% !important;
+  border-spacing: 4px;
+  width: auto !important;
+  margin: 0 auto !important;
 }
 
 /* The actual cells: specular items */
 .glass-table th,
 .glass-table td {
   position: relative;
-  padding: 1.25rem 2rem;
+  padding: 0.75rem 1rem;
   text-align: center;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
+  font-family: 'Amiri', serif !important;
+  font-size: 1.2rem;
   
   /* Inner item liquid glass */
   background: linear-gradient(
@@ -158,7 +162,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
 
   transition: all 400ms cubic-bezier(0.25, 1, 0.5, 1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* Subtle animated glare inside the cells */

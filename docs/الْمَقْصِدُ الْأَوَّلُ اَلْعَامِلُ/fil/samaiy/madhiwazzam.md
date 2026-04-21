@@ -22,53 +22,53 @@ sidebar_position: 2
   <tr>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1">اَلْخَاتِمَةُ</th>
+          <th colspan="1"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/5tmH/">اَلْخَاتِمَةُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْمَعْنَى</th>
+          <th colspan="1">اَلْمَعْنَى</th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلِاسْمُ</th>
+          <th colspan="1"><a href="/docs/مقصد الثالث الإعراب/ism/">اَلِاسْمُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْحَرْفُ</th>
+          <th colspan="1"><a href="/docs/مقدمة/kalimah#الحرف">اَلْحَرْفُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="2"> اَلْفِعْلُ</th>
+          <th colspan="2"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></th>
         </tr>
         <tr>
           <td><table class="glass-table">
               <tr>
-                <th colspan="3"> السَّمَاعِيُّ</th>
+                <th colspan="3"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/">السَّمَاعِيُّ</a></th>
               </tr>
               <tr>
                 <td><table class="glass-table">
                     <tr>
-                      <td> صِيْغَتَا التَّعَجُّبِ</td>
+                      <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/taajjub">صِيْغَتَا التَّعَجُّبِ</a></td>
                     </tr>
                   </table>
                 </td>
                 <td><table border="2">
                     <tr>
-                      <td border="2" class="highlight"> فِعْلُ الْمَدْحِ وَالذَّمِّ</td>
+                      <td border="2" class="highlight"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/madhiwazzam">فِعْلُ الْمَدْحِ وَالذَّمِّ</a></td>
                     </tr>
                   </table>
                 </td>
                 <td><table class="glass-table">
                     <tr>
-                      <td colspan="2"> الْفِعْلُ النَّاقِصُ</td>
+                      <td colspan="2"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/#الفعل-الناقص">الْفِعْلُ النَّاقِصُ</a></td>
                     </tr>
                   </table>
                 </td>
@@ -77,18 +77,18 @@ sidebar_position: 2
           </td>
           <td><table class="glass-table">
               <tr>
-                <th colspan="3"> الْقِيَاسِيْ</th>
+                <th colspan="3"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/#القياسي">الْقِيَاسِيْ</a></th>
               </tr>
               <tr>
                 <td><table class="glass-table">
                     <tr>
-                      <td> الْفِعْلُ الْمُتَعَدِّيْ</td>
+                      <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/qiyasiy#الفعل-المتعدي">الْفِعْلُ الْمُتَعَدِّيْ</a></td>
                     </tr>
                   </table>
                 </td>
                 <td><table class="glass-table">
                     <tr>
-                      <td> الْفِعْلُ اللَّازِمُ</td>
+                      <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/qiyasiy#الفعل-اللازم">الْفِعْلُ اللَّازِمُ</a></td>
                     </tr>
                   </table>
                 </td>
