@@ -28,48 +28,48 @@ sidebar_position: 1
   <tr>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1">اَلْخَاتِمَةُ</th>
+          <th colspan="1"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/5tmH/">اَلْخَاتِمَةُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْمَعْنَى</th>
+          <th colspan="1">اَلْمَعْنَى</th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلِاسْمُ</th>
+          <th colspan="1"><a href="/docs/مقصد الثالث الإعراب/ism/">اَلِاسْمُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="1"> اَلْحَرْفُ</th>
+          <th colspan="1"><a href="/docs/مقدمة/kalimah#الحرف">اَلْحَرْفُ</a></th>
         </tr>
       </table>
     </td>
     <td><table class="glass-table">
         <tr>
-          <th colspan="2"> اَلْفِعْلُ</th>
+          <th colspan="2"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></th>
         </tr>
         <tr>
           <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/samaiy/">السَّمَاعِيُّ</a></td>
           <td><table class="highlight">
               <tr>
-                <th colspan="2" class="highlight"> الْقِيَاسِيْ</th>
+                <th colspan="2" class="highlight"><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/#القياسي">الْقِيَاسِيْ</a></th>
               </tr>
               <tr>
                 <td><table class="highlight">
                     <tr>
-                      <td> الْفِعْلُ الْمُتَعَدِّيْ</td>
+                      <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/qiyasiy#الفعل-المتعدي">الْفِعْلُ الْمُتَعَدِّيْ</a></td>
                     </tr>
                   </table>
                 </td>
                 <td><table class="highlight">
                     <tr>
-                      <td> الْفِعْلُ اللَّازِمُ</td>
+                      <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/qiyasiy#الفعل-اللازم">الْفِعْلُ اللَّازِمُ</a></td>
                     </tr>
                   </table>
                 </td>

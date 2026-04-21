@@ -14,9 +14,9 @@ sidebar_position: 1
     <tbody>
         <tr>
             <td><a href="/docs/مقصد الثالث الإعراب/">اَلْإِعْرَابُ</a></td>
-            <td>اَلْمَعْمُوْلُ</td>
+            <td><a href="/docs/اَلْمَقْصِدُ الثَّانِيْ فِيْ الْمَعْمُوْلِ/">اَلْمَعْمُوْلُ</a></td>
             <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">اَلْعَامِلُ</a></td>
-            <td><a href="/docs/مقدمة/">الْمُقَدِّمَةُ</a></td>
+            <td><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">الْمُقَدِّمَةُ</a></td>
         </tr>
     </tbody>
 </table>
@@ -27,7 +27,7 @@ sidebar_position: 1
 
 <table class="glass-table">
     <thead><tr>
-            <th colSpan="3">اَلْمُقَدِّمَةُ</th>
+            <th colSpan="3"><a href="/docs/مقصد الثالث الإعراب/ism/muqaddimah">اَلْمُقَدِّمَةُ</a></th>
         </tr>
     </thead>
     <tbody>
@@ -35,13 +35,13 @@ sidebar_position: 1
             <td><table class="glass-table">
                     <thead>
                         <tr>
-                            <th colSpan="3">  اَلْعَامِلُ وَالْمَعْمُوْلُ وَالْإِعْرَابُ</th>
+                            <th colSpan="3">اَلْعَامِلُ وَالْمَعْمُوْلُ وَالْإِعْرَابُ</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><a href="/docs/مقصد الثالث الإعراب/">الْإِعْرَابُ</a></td>
-                            <td>الْمَعْمُوْلُ</td>
+                            <td><a href="/docs/اَلْمَقْصِدُ الثَّانِيْ فِيْ الْمَعْمُوْلِ/">الْمَعْمُوْلُ</a></td>
                             <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/">الْعَامِلُ</a></td>
                         </tr>
                     </tbody>
@@ -50,13 +50,13 @@ sidebar_position: 1
             <td><table class="glass-table">
                     <thead>
                         <tr>
-                            <th colSpan="2"> اَلْجُمْلَةُ</th>
+                            <th colSpan="2"><a href="/docs/مقدمة/jumlah">اَلْجُمْلَةُ</a></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>اَلْفِعْلِيَّةُ</td>
-                            <td>اَلِاسْمِيَّةُ</td>
+                            <td><a href="/docs/مقدمة/jumlah#الجملة-الفعلية">اَلْفِعْلِيَّةُ</a></td>
+                            <td><a href="/docs/مقدمة/jumlah#الجملة-الاسمية">اَلِاسْمِيَّةُ</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -64,12 +64,12 @@ sidebar_position: 1
             <td><table class="glass-table">
                     <thead>
                         <tr>
-                            <th colSpan="3"> اَلْكَلِمَةُ</th>
+                            <th colSpan="3">اَلْكَلِمَةُ</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>اَلْحَرْفُ</td>
+                            <td><a href="/docs/مقدمة/kalimah#الحرف">اَلْحَرْفُ</a></td>
                             <td><a href="/docs/الْمَقْصِدُ الْأَوَّلُ اَلْعَامِلُ/fil/">اَلْفِعْلُ</a></td>
                             <td><a href="/docs/مقصد الثالث الإعراب/ism/">اَلِاسْمُ</a></td>
                         </tr>
