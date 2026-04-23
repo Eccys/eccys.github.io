@@ -23,20 +23,64 @@ function Feature({title, description, icon, delay, badge, children}) {
   );
 }
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from '@docusaurus/router';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
   const history = useHistory();
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const isBrowser = useIsBrowser();
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  useEffect(() => {
+    if (isBrowser) {
+      const hasAnimated = sessionStorage.getItem('hasAnimatedHero');
+      if (!hasAnimated) {
+        setShouldAnimate(true);
+        sessionStorage.setItem('hasAnimatedHero', 'true');
+      }
+    }
+  }, [isBrowser]);
 
   const handleStartLearning = (e) => {
     e.preventDefault();
-    setIsTransitioning(true);
-    setTimeout(() => {
-      history.push('/docs/مقدمة/');
-    }, 800);
+    if (isBrowser) {
+      const hasTransitioned = sessionStorage.getItem('hasTransitioned');
+      if (hasTransitioned) {
+        history.push('/docs/مقدمة/');
+        return;
+      }
+      
+      sessionStorage.setItem('hasTransitioned', 'true');
+      
+      const overlay = document.createElement('div');
+      overlay.className = styles.pageTransition;
+      
+      const text = document.createElement('h2');
+      text.innerText = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+      text.style.color = 'white';
+      text.style.fontFamily = '"Space Grotesk", sans-serif';
+      text.style.fontSize = '3rem';
+      text.style.margin = '0';
+      
+      overlay.appendChild(text);
+      document.body.appendChild(overlay);
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          overlay.classList.add(styles.pageTransitionActive);
+        });
+      });
+
+      setTimeout(() => {
+        history.push('/docs/مقدمة/');
+        setTimeout(() => {
+          overlay.classList.add(styles.pageTransitionFadeOut);
+          setTimeout(() => overlay.remove(), 800);
+        }, 100); 
+      }, 1600); 
+    }
   };
 
   const scrollToCurriculum = (e) => {
@@ -68,7 +112,7 @@ function Hero() {
   return (
     <header className={styles.hero}>
       <div className={styles.heroContent}>
-        <div data-aos="zoom-in">
+        <div data-aos={shouldAnimate ? "zoom-in" : undefined}>
           <h1 className={styles.heroTitle}>
             <TypeAnimation
               sequence={[
@@ -105,11 +149,6 @@ function Hero() {
             </a>
           </div>
         </div>
-      </div>
-      <div className={clsx(styles.pageTransition, isTransitioning && styles.pageTransitionActive)}>
-        <h2 style={{ color: 'white', fontFamily: '"Space Grotesk", sans-serif', fontSize: '3rem', margin: 0 }}>
-          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-        </h2>
       </div>
     </header>
   );
