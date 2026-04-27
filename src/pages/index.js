@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import {TypeAnimation} from 'react-type-animation';
-import {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
