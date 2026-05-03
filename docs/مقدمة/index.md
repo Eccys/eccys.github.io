@@ -4,8 +4,6 @@ sidebar_label: "اَلْمُقَدِّمَةُ"
 sidebar_position: 1
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 # اَلْمُقَدِّمَةُ
 
 
@@ -14,9 +12,10 @@ import DocCardList from '@theme/DocCardList';
 
 ## اَلْمُقَدِّمَةُ وَفِيْهَا ثَلَاثَةُ أَبْوَابٍ
 
-
-
-
-
-
-<DocCardList />
+```mermaid
+mindmap
+  root((اَلْمُقَدِّمَةُ))
+    id1(الْعَامِلِ والْمَعْمُوْلِ والْإِعْرَابِ)
+    id2(اَلْجُمْلَةُ)
+    id3(الْكَلِمَةِ)
+```

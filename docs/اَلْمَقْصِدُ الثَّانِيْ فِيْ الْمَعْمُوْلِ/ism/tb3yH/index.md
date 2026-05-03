@@ -1,12 +1,10 @@
 ﻿---
 label: "اَلنَّوْعُ الثَّانِيْ الْمَعْمُوْلُ بِالتَّبَعِيَّةِ"
-sidebar_label: "اَلنَّوْعُ الثَّانِيْ الْمَعْمُوْلُ بِالتَّبَعِيَّةِ"
+sidebar_label: "الْمَعْمُوْلُ بِالتَّبَعِيَّةِ"
 sidebar_position: 2
 ---
 
-import DocCardList from '@theme/DocCardList';
-
-# اَلنَّوْعُ الثَّانِيْ الْمَعْمُوْلُ بِالتَّبَعِيَّةِ
+# الْمَعْمُوْلُ بِالتَّبَعِيَّةِ
 
 وَ هُوَ خَمْسَةٌ
 
@@ -24,4 +22,3 @@ import DocCardList from '@theme/DocCardList';
 
 
 
-<DocCardList />
