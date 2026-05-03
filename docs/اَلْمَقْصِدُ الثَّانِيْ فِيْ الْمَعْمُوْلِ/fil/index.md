@@ -4,8 +4,6 @@ sidebar_label: "الْفِعْلِ الْمَعْمُوْلِ"
 sidebar_position: 2
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 # الْفِعْلِ الْمَعْمُوْلِ
 
 لَا يَكُوْنُ الْفِعْلُ إِلَّا مَعْمُوْلًا بِالْأَصَالَةِ
@@ -31,4 +29,3 @@ import DocCardList from '@theme/DocCardList';
 
 
 
-<DocCardList />

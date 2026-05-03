@@ -4,8 +4,6 @@ sidebar_label: "الْعَامِلِ الْمَعْنَوِيِّ"
 sidebar_position: 4
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 # الْعَامِلِ الْمَعْنَوِيِّ
 
 ## الْأَوَّلُ: اَلِابْتِدَاءُ
@@ -25,4 +23,3 @@ import DocCardList from '@theme/DocCardList';
 
 
 
-<DocCardList />

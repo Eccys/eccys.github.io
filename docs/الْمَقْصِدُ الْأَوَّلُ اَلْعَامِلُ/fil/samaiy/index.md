@@ -1,12 +1,10 @@
 ﻿---
 label: "النَّوْعُ الثَّانِيْ السَّمَاعِيُّ"
-sidebar_label: "النَّوْعُ الثَّانِيْ السَّمَاعِيُّ"
+sidebar_label: "السَّمَاعِيُّ"
 sidebar_position: 2
 ---
 
-import DocCardList from '@theme/DocCardList';
-
-# النَّوْعُ الثَّانِيْ السَّمَاعِيُّ
+# السَّمَاعِيُّ
 
 وَهُوَ ثَلَاثَةُ أَقْسَامٍ
 
@@ -18,6 +16,12 @@ import DocCardList from '@theme/DocCardList';
 
 ### صِيْغَتَا التَّعَجُّبِ
 
-# 
+#
 
-<DocCardList />
+```mermaid
+mindmap
+  root((السَّمَاعِيُّ))
+    id1(فِعْلُ الْمَدْحِ وَالذَّمِّ)
+    id2(الْأَفْعَالُ النَّاقِصَةُ)
+    id3(صِيْغَتَا التَّعَجُّبِ)
+```

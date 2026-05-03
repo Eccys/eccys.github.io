@@ -4,8 +4,6 @@ sidebar_label: "الْخَاتِمَةُ"
 sidebar_position: 5
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 # الْخَاتِمَةُ
 
 وَفِيْها فصْلَانِ
@@ -27,4 +25,3 @@ import DocCardList from '@theme/DocCardList';
 
 
 
-<DocCardList />
