@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -5,6 +6,8 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import {TypeAnimation} from 'react-type-animation';
+import { useHistory } from '@docusaurus/router';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,10 +24,6 @@ function Feature({title, description, icon, delay, badge, children}) {
     </div>
   );
 }
-
-import React, { useState, useEffect } from 'react';
-import { useHistory } from '@docusaurus/router';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 
 function Hero() {
   const {siteConfig} = useDocusaurusContext();
@@ -53,32 +52,53 @@ function Hero() {
       
       sessionStorage.setItem('hasTransitioned', 'true');
       
+      // Use inline styles — CSS module class names are hashed and won't apply
+      // to elements created outside the React tree after navigation unmounts.
       const overlay = document.createElement('div');
-      overlay.className = styles.pageTransition;
+      Object.assign(overlay.style, {
+        position: 'fixed',
+        top: '0',
+        left: '-100vw',
+        width: '100vw',
+        height: '100vh',
+        background: '#111827',
+        zIndex: '99999',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        transition: 'left 1.2s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease',
+        opacity: '1',
+      });
       
       const text = document.createElement('h2');
       text.innerText = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
-      text.style.color = 'white';
-      text.style.fontFamily = '"Space Grotesk", sans-serif';
-      text.style.fontSize = '3rem';
-      text.style.margin = '0';
+      Object.assign(text.style, {
+        color: 'white',
+        fontFamily: '"Space Grotesk", sans-serif',
+        fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+        margin: '0',
+        textAlign: 'center',
+        padding: '0 2rem',
+      });
       
       overlay.appendChild(text);
       document.body.appendChild(overlay);
 
+      // Double rAF forces browser to register initial state before transition
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          overlay.classList.add(styles.pageTransitionActive);
+          overlay.style.left = '0';
         });
       });
 
+      // Wait for sweep-in, then navigate, then fade out
       setTimeout(() => {
         history.push('/docs/مقدمة/');
         setTimeout(() => {
-          overlay.classList.add(styles.pageTransitionFadeOut);
-          setTimeout(() => overlay.remove(), 800);
-        }, 100); 
-      }, 1600); 
+          overlay.style.opacity = '0';
+          setTimeout(() => overlay.remove(), 900);
+        }, 200);
+      }, 1800);
     }
   };
 
@@ -86,8 +106,10 @@ function Hero() {
     e.preventDefault();
     const target = document.getElementById('curriculum');
     if (!target) return;
-    
-    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+
+    // Offset for the sticky Docusaurus navbar (~60px)
+    const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 60;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     const duration = 1200; // heavy ease
