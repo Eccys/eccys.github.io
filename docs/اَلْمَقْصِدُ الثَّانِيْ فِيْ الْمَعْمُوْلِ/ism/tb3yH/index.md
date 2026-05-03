@@ -4,6 +4,7 @@ sidebar_label: "اَلنَّوْعُ الثَّانِيْ الْمَعْمُوْ
 sidebar_position: 2
 ---
 
+import DocCardList from '@theme/DocCardList';
 
 # اَلنَّوْعُ الثَّانِيْ الْمَعْمُوْلُ بِالتَّبَعِيَّةِ
 
@@ -19,3 +20,8 @@ sidebar_position: 2
 
 الْخَامِسُ التَّأْكِيْدُ نَحْوُ: اُتْرُكِ الذُّنُوْبَ كُلَّهَا
 
+
+
+
+
+<DocCardList />

@@ -4,6 +4,7 @@ sidebar_label: "الْخَاتِمَةُ"
 sidebar_position: 5
 ---
 
+import DocCardList from '@theme/DocCardList';
 
 # الْخَاتِمَةُ
 
@@ -22,3 +23,8 @@ sidebar_position: 5
 وَقَدْ يُحْذَفُ الْعَامِلُ
 
 نَحْوُ اللهَ، فِيْ جَوَابِ مَنْ قَالَ: مَنْ تَعْبُدُ؟
+
+
+
+
+<DocCardList />
