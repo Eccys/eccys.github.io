@@ -42,13 +42,20 @@
   line-height: 1.1;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #fff 0%, hsla(0, 0%, 100%, 0.6) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Space Grotesk', sans-serif !important;
+  color: #fff;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif !important;
   overflow-wrap: break-word;
   word-break: keep-all;
   max-width: 100%;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .heroTitle {
+    background: linear-gradient(135deg, #fff 0%, hsla(0, 0%, 100%, 0.6) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .heroSubtitle {

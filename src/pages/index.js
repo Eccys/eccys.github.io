@@ -10,6 +10,7 @@ import { useHistory } from '@docusaurus/router';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { smoothScrollTo } from '../utils/easing';
 
 function Feature({title, description, icon, delay, badge, children}) {
   return (
@@ -143,24 +144,7 @@ function Hero() {
       window.scrollTo(0, targetPosition);
       return;
     }
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 1200; // heavy ease
-    let start = null;
-    
-    const easeInOutQuart = time => time < 0.5 ? 8 * time * time * time * time : 1 - Math.pow(-2 * time + 2, 4) / 2;
-
-    window.requestAnimationFrame(function step(timestamp) {
-      if (!start) start = timestamp;
-      const progress = timestamp - start;
-      const percent = Math.min(progress / duration, 1);
-      
-      window.scrollTo(0, startPosition + distance * easeInOutQuart(percent));
-      
-      if (progress < duration) {
-        window.requestAnimationFrame(step);
-      }
-    });
+    smoothScrollTo(targetPosition, 1200);
   };
 
   return (
