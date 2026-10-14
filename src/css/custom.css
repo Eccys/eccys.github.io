@@ -7,8 +7,52 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@500;700&display=swap');
 
-:root {
-  /* Brand Colors — dark mode only */
+:root,
+[data-theme='light'] {
+  /* Brand Colors — accessible emerald green for light mode */
+  --brand-primary-h: 155;
+  --brand-primary-s: 85%;
+  --brand-primary-l: 32%;
+  --brand-primary: hsl(var(--brand-primary-h), var(--brand-primary-s), var(--brand-primary-l));
+
+  --ifm-color-primary: var(--brand-primary);
+  --ifm-color-primary-dark: hsl(var(--brand-primary-h), var(--brand-primary-s), 28%);
+  --ifm-color-primary-darker: hsl(var(--brand-primary-h), var(--brand-primary-s), 24%);
+  --ifm-color-primary-darkest: hsl(var(--brand-primary-h), var(--brand-primary-s), 20%);
+  --ifm-color-primary-light: hsl(var(--brand-primary-h), var(--brand-primary-s), 36%);
+  --ifm-color-primary-lighter: hsl(var(--brand-primary-h), var(--brand-primary-s), 40%);
+  --ifm-color-primary-lightest: hsl(var(--brand-primary-h), var(--brand-primary-s), 45%);
+
+  /* Typography */
+  --ifm-font-family-base: 'Outfit', 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Noto Kufi Arabic', 'Outfit', sans-serif;
+  --ifm-code-font-size: 95%;
+
+  /* Layout */
+  --ifm-container-width: 1200px;
+
+  /* Light mode surfaces */
+  --ifm-background-color: #f8fafc;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-navbar-background-color: rgba(248, 250, 252, 0.85);
+  --ifm-font-color-base: #0f172a;
+  --ifm-font-color-secondary: rgba(15, 23, 42, 0.75);
+  --ifm-heading-color: #0f172a;
+  --ifm-hero-text-color: #0f172a;
+  --ifm-menu-color: rgba(15, 23, 42, 0.72);
+  --ifm-menu-color-active: var(--brand-primary);
+  --ifm-toc-link-color: rgba(15, 23, 42, 0.72);
+  --ifm-link-color: var(--brand-primary);
+  --ifm-breadcrumb-color-active: var(--brand-primary);
+  --ifm-tabs-color-active: var(--brand-primary);
+  --glass-bg: rgba(15, 23, 42, 0.03);
+  --glass-border: rgba(15, 23, 42, 0.12);
+  --docusaurus-highlighted-code-line-bg: rgba(15, 23, 42, 0.08);
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  /* Brand Colors — dark mode */
   --brand-primary-h: 155;
   --brand-primary-s: 100%;
   --brand-primary-l: 55%;
@@ -22,25 +66,17 @@
   --ifm-color-primary-lighter: hsl(var(--brand-primary-h), var(--brand-primary-s), 55%);
   --ifm-color-primary-lightest: hsl(var(--brand-primary-h), var(--brand-primary-s), 60%);
 
-  /* Typography */
-  --ifm-font-family-base: 'Outfit', 'Noto Kufi Arabic', system-ui, -apple-system, sans-serif;
-  --ifm-heading-font-family: 'Noto Kufi Arabic', 'Outfit', sans-serif;
-  --ifm-code-font-size: 95%;
-
-  /* Layout */
-  --ifm-container-width: 1200px;
-
-  /* Dark mode surfaces — force dark regardless of data-theme */
+  /* Dark mode surfaces — high contrast for Arabic diacritics (harakat) */
   --ifm-background-color: hsl(230, 20%, 5%);
   --ifm-background-surface-color: hsl(230, 20%, 8%);
   --ifm-navbar-background-color: hsla(230, 20%, 5%, 0.8);
-  --ifm-font-color-base: #e3e3e3;
-  --ifm-font-color-secondary: hsla(0, 0%, 100%, 0.68);
-  --ifm-heading-color: #fff;
-  --ifm-hero-text-color: #fff;
-  --ifm-menu-color: hsla(0, 0%, 100%, 0.6);
+  --ifm-font-color-base: #ffffff;
+  --ifm-font-color-secondary: hsla(0, 0%, 100%, 0.78);
+  --ifm-heading-color: #ffffff;
+  --ifm-hero-text-color: #ffffff;
+  --ifm-menu-color: hsla(0, 0%, 100%, 0.72);
   --ifm-menu-color-active: var(--brand-primary);
-  --ifm-toc-link-color: hsla(0, 0%, 100%, 0.6);
+  --ifm-toc-link-color: hsla(0, 0%, 100%, 0.72);
   --ifm-link-color: var(--brand-primary);
   --ifm-breadcrumb-color-active: var(--brand-primary);
   --ifm-tabs-color-active: var(--brand-primary);
@@ -48,6 +84,11 @@
   --glass-border: hsla(0, 0%, 100%, 0.08);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   color-scheme: dark;
+}
+
+/* Keep announcement bar below the page transition overlay */
+div[class*="announcementBar"] {
+  z-index: 100;
 }
 
 /* Glassmorphism Utility (homepage cards + bottom section) */
@@ -96,13 +137,13 @@ h6 {
 }
 
 .footer {
-  background: var(--bg-surface) !important;
+  background: var(--ifm-background-surface-color) !important;
   border-top: 1px solid var(--glass-border);
   padding: 3rem 0 !important;
 }
 
 .footer__link-item, .footer__title, .footer__copyright {
-  color: hsla(0,0%,100%,0.8) !important;
+  color: var(--ifm-font-color-secondary) !important;
 }
 
 .glow-on-hover {
@@ -132,7 +173,9 @@ h6 {
 .markdown li {
   font-family: 'Noto Kufi Arabic', sans-serif;
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.9;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
 }
 
 .markdown code {
@@ -215,6 +258,9 @@ h6 {
   border-radius: 0.75rem;
   font-family: 'Noto Kufi Arabic', sans-serif !important;
   font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--ifm-font-color-base);
 
   /* Inner item liquid glass */
   background: linear-gradient(

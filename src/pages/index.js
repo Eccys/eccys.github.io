@@ -30,6 +30,7 @@ function Hero() {
   const history = useHistory();
   const isBrowser = useIsBrowser();
   const [shouldAnimate, setShouldAnimate] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   // DX Helper: Ctrl + Alt + R to reset animations for testing
   useEffect(() => {
@@ -46,8 +47,11 @@ function Hero() {
 
   useEffect(() => {
     if (isBrowser) {
+      const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+      setPrefersReducedMotion(reduced);
+
       const hasAnimated = sessionStorage.getItem('hasAnimatedHero');
-      if (!hasAnimated) {
+      if (!hasAnimated && !reduced) {
         setShouldAnimate(true);
         sessionStorage.setItem('hasAnimatedHero', 'true');
       }
@@ -58,12 +62,19 @@ function Hero() {
     e.preventDefault();
     if (isBrowser) {
       const hasTransitioned = sessionStorage.getItem('hasTransitioned');
-      if (hasTransitioned) {
+      if (hasTransitioned || prefersReducedMotion) {
         history.push('/docs/مقدمة/');
         return;
       }
       
       sessionStorage.setItem('hasTransitioned', 'true');
+
+      // Hide any active announcement bar while the page transition overlay is sweeping across
+      const announcementBar = document.querySelector('div[class*="announcementBar"]');
+      const prevAnnouncementVisibility = announcementBar ? announcementBar.style.visibility : '';
+      if (announcementBar) {
+        announcementBar.style.visibility = 'hidden';
+      }
       
       // Use inline styles — CSS module class names are hashed and won't apply
       // to elements created outside the React tree after navigation unmounts.
@@ -75,7 +86,7 @@ function Hero() {
         width: '100vw',
         height: '100vh',
         background: '#111827',
-        zIndex: '99999',
+        zIndex: '9999',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -109,7 +120,12 @@ function Hero() {
         history.push('/docs/مقدمة/');
         setTimeout(() => {
           overlay.style.opacity = '0';
-          setTimeout(() => overlay.remove(), 900);
+          setTimeout(() => {
+            overlay.remove();
+            if (announcementBar) {
+              announcementBar.style.visibility = prevAnnouncementVisibility;
+            }
+          }, 900);
         }, 200);
       }, 1800);
     }
@@ -123,6 +139,10 @@ function Hero() {
     // Offset for the sticky Docusaurus navbar (~60px)
     const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 60;
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+    if (prefersReducedMotion) {
+      window.scrollTo(0, targetPosition);
+      return;
+    }
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     const duration = 1200; // heavy ease
@@ -148,19 +168,23 @@ function Hero() {
       <div className={styles.heroContent}>
         <div className={shouldAnimate ? styles.heroFirstLoad : undefined}>
           <h1 className={styles.heroTitle}>
-            <TypeAnimation
-              sequence={[
-                "السلام عليكم",
-                2000,
-                "Nahw School",
-                2000,
-                "Arabic Grammar",
-                2000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            {prefersReducedMotion ? (
+              <span>Nahw School</span>
+            ) : (
+              <TypeAnimation
+                sequence={[
+                  "السلام عليكم",
+                  2000,
+                  "Nahw School",
+                  2000,
+                  "Arabic Grammar",
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            )}
           </h1>
           <p className={styles.heroSubtitle}>
             A deep, systematic approach to mastering the language of the Qur'an, 
@@ -191,7 +215,14 @@ function Hero() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: 'ease-out-expo', once: true });
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+    const hasAnimatedAOS = sessionStorage.getItem('hasAnimatedAOS');
+    if (reduced || hasAnimatedAOS) {
+      AOS.init({ disable: true, once: true });
+    } else {
+      AOS.init({ duration: 1000, easing: 'ease-out-expo', once: true });
+      sessionStorage.setItem('hasAnimatedAOS', 'true');
+    }
   }, []);
 
   return (
@@ -250,13 +281,25 @@ export default function Home() {
               delay={500}
               icon="🌳"
               badge="Coming Soon"
-            />
+            >
+              <details className={styles.learnMore}>
+                <summary>Learn More</summary>
+                <div className={styles.learnMoreContent}>
+                  <p>The culmination of the three-tier Nahw curriculum, drawing upon advanced reference works such as <em>Alfiyyah Ibn Malik</em>, <em>Sharh Ibn Aqil</em>, and <em>Mughni al-Labib</em>.</p>
+                  <ul>
+                    <li>Explores intricate grammatical disputes (<em>khilafiyyat</em>) between the Basran and Kufan schools where they directly impact Qur'anic exegesis (<em>tafsir</em>).</li>
+                    <li>Covers advanced elliptical structures (<em>hadhf wa taqdir</em>), particle semantics (<em>ma'ani al-huruf</em>), and rhetorical syntax (<em>ilm al-ma'ani</em>).</li>
+                    <li>Intended for students who have mastered <em>Sughra</em> and <em>Wusta</em> and wish to engage directly with classical commentaries.</li>
+                  </ul>
+                </div>
+              </details>
+            </Feature>
           </div>
         </section>
 
         <section className={clsx(styles.bottomSection, 'glass', 'text--center')} data-aos="fade-up">
           <Heading as="h3" className={styles.featureTitle} style={{marginBottom: '1.5rem'}}>📚 Our Sources</Heading>
-          <p style={{maxWidth: '800px', margin: '0 auto 2.5rem auto', color: 'hsla(0, 0%, 100%, 0.7)', fontSize: '1.05rem', lineHeight: '1.7'}}>
+          <p style={{maxWidth: '800px', margin: '0 auto 2.5rem auto', color: 'var(--ifm-font-color-secondary)', fontSize: '1.05rem', lineHeight: '1.7'}}>
             Our curriculum draws directly from <a href="https://en.wikipedia.org/wiki/Qatr_al-Nada" target="_blank" rel="noopener noreferrer">Qatr al-Nada</a>, <a href="https://en.wikipedia.org/wiki/Alfiyya" target="_blank" rel="noopener noreferrer">Alfiyyah Ibn Malik</a>, <a href="https://en.wikipedia.org/w/index.php?search=Hidayat+al-Nahw" target="_blank" rel="noopener noreferrer">Hidayatun Nahw</a>, and the pedagogical tradition of the subcontinent, bridging classical depth with modern pedagogy.
           </p>
           <div style={{display: 'inline-block'}}>
