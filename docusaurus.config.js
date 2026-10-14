@@ -13,10 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://arabic.ecys.xyz',
+  url:
+    process.env.SITE_URL ||
+    (process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : 'https://arabic.ecys.xyz'),
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: process.env.BASE_URL || '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -66,6 +70,16 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      ...(process.env.ALGOLIA_API_KEY
+        ? {
+            algolia: {
+              appId: process.env.ALGOLIA_APP_ID || 'NAHW_SCHOOL_APP_ID',
+              apiKey: process.env.ALGOLIA_API_KEY,
+              indexName: process.env.ALGOLIA_INDEX_NAME || 'arabic-ecys',
+              contextualSearch: true,
+            },
+          }
+        : {}),
       navbar: {
         title: 'Nahw School',
         logo: {
@@ -102,8 +116,8 @@ const config = {
                 to: '/docs/%D9%85%D9%82%D8%AF%D9%85%D8%A9/',
               },
               {
-                label: 'Wusta fi an Nahw (Coming Soon)',
-                to: '#',
+                label: 'Wusta fi an Nahw',
+                to: '/docs/wusta-coming-soon',
               },
             ],
           },
