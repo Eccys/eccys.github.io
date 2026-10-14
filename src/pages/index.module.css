@@ -38,7 +38,7 @@
 }
 
 .heroTitle {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.25rem, 8vw, 6rem);
   line-height: 1.1;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -46,6 +46,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Space Grotesk', sans-serif !important;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  max-width: 100%;
 }
 
 .heroSubtitle {
@@ -61,6 +64,7 @@
 
 .cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
 }
@@ -72,7 +76,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 4rem 0;
 }
@@ -87,7 +91,7 @@
 
 .card:hover {
   border-color: var(--brand-primary);
-  background: hsla(0, 0%, 100%, 0.05);
+  background: var(--glass-bg);
 }
 
 .sectionTitle {
@@ -116,7 +120,7 @@
 }
 
 .featureText {
-  color: hsla(0, 0%, 100%, 0.6);
+  color: var(--ifm-font-color-secondary);
   line-height: 1.7;
   flex-grow: 1;
 }
@@ -124,7 +128,7 @@
 .learnMore {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-top: 1px solid var(--glass-border);
 }
 
 .learnMore summary {
@@ -155,7 +159,7 @@
 .learnMoreContent {
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: hsla(0, 0%, 100%, 0.7);
+  color: var(--ifm-font-color-secondary);
   line-height: 1.6;
 }
 
@@ -191,10 +195,31 @@
 
 @media screen and (max-width: 996px) {
   .heroTitle {
-    font-size: 3.5rem;
+    font-size: clamp(2.25rem, 8vw, 3.5rem);
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero {
+    padding: 1.25rem 1rem;
+  }
+  .heroTitle {
+    font-size: clamp(1.85rem, 8.5vw, 2.35rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroFirstLoad,
+  .learnMore[open] .learnMoreContent {
+    animation: none !important;
+  }
+  .card,
+  .learnMore summary::before,
+  .startNowLink::before {
+    transition: none !important;
   }
 }
 

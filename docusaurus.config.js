@@ -67,8 +67,8 @@ const config = {
       image: 'img/logo-favicon.png',
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       ...(process.env.ALGOLIA_API_KEY
         ? {
