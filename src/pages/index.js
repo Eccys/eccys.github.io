@@ -30,8 +30,17 @@ function Hero() {
   const {siteConfig} = useDocusaurusContext();
   const history = useHistory();
   const isBrowser = useIsBrowser();
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
+    typeof window !== 'undefined'
+      ? (window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false)
+      : false
+  );
+  const [shouldAnimate, setShouldAnimate] = useState(() =>
+    typeof window === 'undefined'
+      ? true
+      : (!sessionStorage.getItem('hasAnimatedHero') &&
+         !(window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false))
+  );
 
   // DX Helper: Ctrl + Alt + R to reset animations for testing
   useEffect(() => {
@@ -52,7 +61,9 @@ function Hero() {
       setPrefersReducedMotion(reduced);
 
       const hasAnimated = sessionStorage.getItem('hasAnimatedHero');
-      if (!hasAnimated && !reduced) {
+      if (reduced || hasAnimated) {
+        setShouldAnimate(false);
+      } else {
         setShouldAnimate(true);
         sessionStorage.setItem('hasAnimatedHero', 'true');
       }
